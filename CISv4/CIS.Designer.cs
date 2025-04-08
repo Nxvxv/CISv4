@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CIS));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -63,7 +63,7 @@
             this.guna2HtmlLabel48 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox13 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.StreetName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -100,8 +100,6 @@
             this.Barangay = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Suffix = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.MS = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.UploadBTN = new Guna.UI2.WinForms.Guna2Button();
             this.DateofEnlistment = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel42 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -786,7 +784,7 @@
             this.Registration.Controls.Add(this.guna2HtmlLabel48);
             this.Registration.Controls.Add(this.guna2TextBox2);
             this.Registration.Controls.Add(this.guna2HtmlLabel24);
-            this.Registration.Controls.Add(this.guna2TextBox13);
+            this.Registration.Controls.Add(this.StreetName);
             this.Registration.Controls.Add(this.guna2HtmlLabel23);
             this.Registration.Controls.Add(this.guna2ComboBox3);
             this.Registration.Controls.Add(this.guna2HtmlLabel14);
@@ -823,8 +821,6 @@
             this.Registration.Controls.Add(this.Barangay);
             this.Registration.Controls.Add(this.guna2HtmlLabel16);
             this.Registration.Controls.Add(this.Suffix);
-            this.Registration.Controls.Add(this.MS);
-            this.Registration.Controls.Add(this.guna2HtmlLabel15);
             this.Registration.Controls.Add(this.UploadBTN);
             this.Registration.Controls.Add(this.DateofEnlistment);
             this.Registration.Controls.Add(this.guna2HtmlLabel42);
@@ -851,7 +847,6 @@
             this.Registration.Size = new System.Drawing.Size(1532, 970);
             this.Registration.TabIndex = 0;
             this.Registration.Text = "Registration";
-            this.Registration.Click += new System.EventHandler(this.Registration_Click);
             // 
             // guna2HtmlLabel102
             // 
@@ -948,10 +943,11 @@
             this.guna2TextBox2.Location = new System.Drawing.Point(443, 749);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "MM-DD-YYYY";
+            this.guna2TextBox2.PlaceholderText = "DD-MM-YYYY";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(314, 50);
             this.guna2TextBox2.TabIndex = 165;
+            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // guna2HtmlLabel24
             // 
@@ -963,28 +959,29 @@
             this.guna2HtmlLabel24.TabIndex = 164;
             this.guna2HtmlLabel24.Text = "Street Name:";
             // 
-            // guna2TextBox13
+            // StreetName
             // 
-            this.guna2TextBox13.Animated = true;
-            this.guna2TextBox13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox13.BorderRadius = 2;
-            this.guna2TextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox13.DefaultText = "";
-            this.guna2TextBox13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox13.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox13.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox13.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Location = new System.Drawing.Point(181, 515);
-            this.guna2TextBox13.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox13.Name = "guna2TextBox13";
-            this.guna2TextBox13.PlaceholderText = "Street Name";
-            this.guna2TextBox13.SelectedText = "";
-            this.guna2TextBox13.Size = new System.Drawing.Size(208, 50);
-            this.guna2TextBox13.TabIndex = 163;
+            this.StreetName.Animated = true;
+            this.StreetName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.StreetName.BorderRadius = 2;
+            this.StreetName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StreetName.DefaultText = "";
+            this.StreetName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.StreetName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.StreetName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.StreetName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.StreetName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StreetName.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.StreetName.ForeColor = System.Drawing.Color.Black;
+            this.StreetName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StreetName.Location = new System.Drawing.Point(181, 515);
+            this.StreetName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.StreetName.Name = "StreetName";
+            this.StreetName.PlaceholderText = "Street Name";
+            this.StreetName.SelectedText = "";
+            this.StreetName.Size = new System.Drawing.Size(208, 50);
+            this.StreetName.TabIndex = 163;
+            this.StreetName.TextChanged += new System.EventHandler(this.StreetName_TextChanged);
             // 
             // guna2HtmlLabel23
             // 
@@ -1009,15 +1006,11 @@
             this.guna2ComboBox3.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBox3.ItemHeight = 44;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
-            "College of Computer Studies",
-            "College of Education",
-            "College of Engineering",
-            "College of Business Administration and Accountancy"});
             this.guna2ComboBox3.Location = new System.Drawing.Point(37, 245);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.Size = new System.Drawing.Size(572, 50);
             this.guna2ComboBox3.TabIndex = 161;
+            this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             // 
             // guna2HtmlLabel14
             // 
@@ -1106,6 +1099,7 @@
             this.Section.Name = "Section";
             this.Section.Size = new System.Drawing.Size(160, 50);
             this.Section.TabIndex = 156;
+            this.Section.SelectedIndexChanged += new System.EventHandler(this.Section_SelectedIndexChanged);
             // 
             // guna2HtmlLabel53
             // 
@@ -1579,39 +1573,7 @@
             this.Suffix.Name = "Suffix";
             this.Suffix.Size = new System.Drawing.Size(121, 50);
             this.Suffix.TabIndex = 110;
-            // 
-            // MS
-            // 
-            this.MS.BackColor = System.Drawing.Color.Transparent;
-            this.MS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.MS.BorderRadius = 2;
-            this.MS.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.MS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MS.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MS.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.MS.ForeColor = System.Drawing.Color.Black;
-            this.MS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.MS.ItemHeight = 44;
-            this.MS.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.MS.Location = new System.Drawing.Point(1039, 95);
-            this.MS.Name = "MS";
-            this.MS.Size = new System.Drawing.Size(87, 50);
-            this.MS.TabIndex = 109;
-            this.MS.Visible = false;
-            // 
-            // guna2HtmlLabel15
-            // 
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(1039, 62);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(36, 26);
-            this.guna2HtmlLabel15.TabIndex = 108;
-            this.guna2HtmlLabel15.Text = "MS:";
-            this.guna2HtmlLabel15.Visible = false;
+            this.Suffix.SelectedIndexChanged += new System.EventHandler(this.Suffix_SelectedIndexChanged);
             // 
             // UploadBTN
             // 
@@ -1907,6 +1869,7 @@
             this.StudentNumber.ShadowDecoration.Depth = 10;
             this.StudentNumber.Size = new System.Drawing.Size(219, 50);
             this.StudentNumber.TabIndex = 54;
+            this.StudentNumber.TextChanged += new System.EventHandler(this.StudentNumber_TextChanged);
             // 
             // Picture
             // 
@@ -1953,6 +1916,7 @@
             this.RegistrationP2.Size = new System.Drawing.Size(1532, 970);
             this.RegistrationP2.TabIndex = 9;
             this.RegistrationP2.Text = "RegistrationP2";
+            this.RegistrationP2.Click += new System.EventHandler(this.SubmitBTN_Click);
             // 
             // guna2HtmlLabel101
             // 
@@ -2067,6 +2031,7 @@
             this.CancelBTN.TabIndex = 184;
             this.CancelBTN.Text = "Cancel";
             this.CancelBTN.UseTransparentBackground = true;
+            this.CancelBTN.Click += new System.EventHandler(this.CancelBTN_Click);
             // 
             // SubmitBTN
             // 
@@ -2084,12 +2049,13 @@
             this.SubmitBTN.ForeColor = System.Drawing.Color.White;
             this.SubmitBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(130)))), ((int)(((byte)(93)))));
             this.SubmitBTN.HoverState.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitBTN.Location = new System.Drawing.Point(1180, 751);
+            this.SubmitBTN.Location = new System.Drawing.Point(1180, 747);
             this.SubmitBTN.Name = "SubmitBTN";
             this.SubmitBTN.Size = new System.Drawing.Size(314, 55);
             this.SubmitBTN.TabIndex = 183;
             this.SubmitBTN.Text = "Submit";
             this.SubmitBTN.UseTransparentBackground = true;
+            this.SubmitBTN.Click += new System.EventHandler(this.SubmitBTN_Click);
             // 
             // guna2HtmlLabel94
             // 
@@ -3119,43 +3085,43 @@
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
             this.guna2DataGridView1.AllowUserToResizeColumns = false;
             this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.guna2DataGridView1.ColumnHeadersHeight = 32;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentNo,
             this.FullName,
             this.EmailAddressList,
             this.ContactNo});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(19, 66);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 40;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -5900,8 +5866,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2ComboBox Suffix;
-        private Guna.UI2.WinForms.Guna2ComboBox MS;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2ComboBox Province;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
         private Guna.UI2.WinForms.Guna2ComboBox Municipality;
@@ -5978,7 +5942,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox13;
+        private Guna.UI2.WinForms.Guna2TextBox StreetName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel28;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel49;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel48;

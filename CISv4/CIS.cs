@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Transactions;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
 
 namespace CISv4
@@ -18,6 +19,8 @@ namespace CISv4
     public partial class CIS : Form
     {
         //------------------------------------------------------------------------------REGISTRATION--------------------------------------------------------------------------------------
+        private bool isFormLoaded = false;
+
         public CIS()
         {
             InitializeComponent();
@@ -25,6 +28,7 @@ namespace CISv4
             Course.SelectedIndexChanged += Course_SelectedIndexChanged;
             Province.SelectedIndexChanged += Province_SelectedIndexChanged;
             Municipality.SelectedIndexChanged += Municipality_SelectedIndexChanged;
+
         }
 
         private void CIS_Load(object sender, EventArgs e)
@@ -41,15 +45,16 @@ namespace CISv4
             FirstName.TextChanged += FirstName_TextChanged;
             MiddleName.TextChanged += MiddleName_TextChanged;
             Street.TextChanged += Street_TextChanged;
+            StreetName.TextChanged += StreetName_TextChanged;
             Religion.TextChanged += Religion_TextChanged;
             PlaceofBirth.TextChanged += PlaceofBirth_TextChanged;
-            //Complexion.TextChanged += Complexion_TextChanged;
-            //FatherName.TextChanged += FatherName_TextChanged;
-            //MotherName.TextChanged += MotherName_TextChanged;
-            //FatherJob.TextChanged += FatherJob_TextChanged;
-            //MotherJob.TextChanged += MotherJob_TextChanged;
-            //Relationship.TextChanged += Relationship_TextChanged;
-            //EmergencyPerson.TextChanged += EmergencyPerson_TextChanged;
+            Complexion.TextChanged += Complexion_TextChanged;
+            FatherName.TextChanged += FatherName_TextChanged;
+            MotherName.TextChanged += MotherName_TextChanged;
+            FatherJob.TextChanged += FatherJob_TextChanged;
+            MotherJob.TextChanged += MotherJob_TextChanged;
+            Relationship.TextChanged += Relationship_TextChanged;
+            EmergencyPerson.TextChanged += EmergencyPerson_TextChanged;
             FBName.Text = "fb.com/";
             FBName.SelectionStart = 7;
 
@@ -59,25 +64,28 @@ namespace CISv4
             PlaceofBirth.KeyPress += OnlyLetters_KeyPress;
             Religion.KeyPress += OnlyLetters_KeyPress;
             Complexion.KeyPress += OnlyLetters_KeyPress;
-            //FatherName.KeyPress += OnlyLetters_KeyPress;
-            //FatherJob.KeyPress += OnlyLetters_KeyPress;
-            //MotherName.KeyPress += OnlyLetters_KeyPress;
-            //MotherJob.KeyPress += OnlyLetters_KeyPress;
-            //EmergencyPerson.KeyPress += OnlyLetters_KeyPress;
-            //Relationship.KeyPress += OnlyLetters_KeyPress;
+            FatherName.KeyPress += OnlyLetters_KeyPress;
+            FatherJob.KeyPress += OnlyLetters_KeyPress;
+            MotherName.KeyPress += OnlyLetters_KeyPress;
+            MotherJob.KeyPress += OnlyLetters_KeyPress;
+            EmergencyPerson.KeyPress += OnlyLetters_KeyPress;
+            Relationship.KeyPress += OnlyLetters_KeyPress;
 
             StudentNumber.KeyPress += StudentNumber_KeyPress;
             TelephoneCellNo.KeyPress += NumericTextBox_KeyPress;
             Height.KeyPress += NumericTextBox_KeyPress;
             Weight.KeyPress += NumericTextBox_KeyPress;
-            //EmergencyPersonNo.KeyPress += NumericTextBox_KeyPress;
+            EmergencyPersonNo.KeyPress += NumericTextBox_KeyPress;
 
             TelephoneCellNo.Leave += TelephoneCellNo_Leave;
-            //EmergencyPersonNo.Leave += EmergencyPersonNo_Leave;
+            EmergencyPersonNo.Leave += EmergencyPersonNo_Leave;
             EmailAddress.Leave += EmailAddress_Leave;
 
             Birthday.MaxDate = DateTime.Today;
             Birthday.ValueChanged += Birthday_ValueChanged;
+
+            LoadDepartments();
+            isFormLoaded = true;
 
         }
         private void LoadYearLevels()
@@ -111,12 +119,26 @@ namespace CISv4
         {
             try
             {
+                if (guna2ComboBox3.SelectedItem == null)
+                {
+                    if (isFormLoaded)
+                    {
+                        MessageBox.Show("Please select a department first.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    return;
+                }
+
+                string selectedDepartment = guna2ComboBox3.SelectedItem.ToString();
+
                 using (MySqlConnection conn = Database.GetConnection())
                 {
                     conn.Open();
-                    string query = "SELECT course_id, code FROM course ORDER BY code ASC";
+                    string query = "SELECT course_id, code FROM course WHERE department = @department ORDER BY code ASC";
+
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("@department", selectedDepartment);
+
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             Dictionary<int, string> courseList = new Dictionary<int, string>();
@@ -148,8 +170,6 @@ namespace CISv4
             }
         }
 
-
-
         private void LoadSections()
         {
             if (YearLevel.SelectedItem == null || Course.SelectedValue == null)
@@ -160,46 +180,53 @@ namespace CISv4
             }
 
             string selectedYearLevel = YearLevel.SelectedItem.ToString();
-            int selectedCourseId = Convert.ToInt32(Course.SelectedValue);
 
-            try
+            if (Course.SelectedValue is int selectedCourseId)
             {
-                using (MySqlConnection conn = Database.GetConnection())
+                try
                 {
-                    conn.Open();
-                    string query = "SELECT section_id, campus FROM section WHERE year_level = @yearLevel AND course_id = @courseId ORDER BY campus ASC";
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    using (MySqlConnection conn = Database.GetConnection())
                     {
-                        cmd.Parameters.AddWithValue("@yearLevel", selectedYearLevel);
-                        cmd.Parameters.AddWithValue("@courseId", selectedCourseId);
-
-                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        conn.Open();
+                        string query = "SELECT section_id, campus FROM section WHERE year_level = @yearLevel AND course_id = @courseId ORDER BY campus ASC";
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
                         {
-                            Dictionary<int, string> sectionList = new Dictionary<int, string>();
-                            while (reader.Read())
-                            {
-                                sectionList.Add(reader.GetInt32("section_id"), reader.GetString("campus"));
-                            }
+                            cmd.Parameters.AddWithValue("@yearLevel", selectedYearLevel);
+                            cmd.Parameters.AddWithValue("@courseId", selectedCourseId);
 
-                            if (sectionList.Count > 0)
+                            using (MySqlDataReader reader = cmd.ExecuteReader())
                             {
-                                Section.DataSource = new BindingSource(sectionList, null);
-                                Section.DisplayMember = "Value";
-                                Section.ValueMember = "Key";
-                                Section.SelectedIndex = -1;
-                            }
-                            else
-                            {
-                                Section.DataSource = null;
-                                Section.Items.Clear();
+                                Dictionary<int, string> sectionList = new Dictionary<int, string>();
+                                while (reader.Read())
+                                {
+                                    sectionList.Add(reader.GetInt32("section_id"), reader.GetString("campus"));
+                                }
+
+                                if (sectionList.Count > 0)
+                                {
+                                    Section.DataSource = new BindingSource(sectionList, null);
+                                    Section.DisplayMember = "Value";
+                                    Section.ValueMember = "Key";
+                                    Section.SelectedIndex = -1;
+                                }
+                                else
+                                {
+                                    Section.DataSource = null;
+                                    Section.Items.Clear();
+                                }
                             }
                         }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading Sections: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error loading Sections: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Section.DataSource = null;
+                Section.Items.Clear();
             }
         }
 
@@ -304,6 +331,34 @@ namespace CISv4
                 MessageBox.Show("Error loading Barangays: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void LoadDepartments()
+        {
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT DISTINCT department FROM course"; // Query to fetch distinct departments
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            guna2ComboBox3.Items.Clear();
+
+                            while (reader.Read())
+                            {
+                                guna2ComboBox3.Items.Add(reader["department"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading departments: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void YearLevel_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -344,7 +399,7 @@ namespace CISv4
                 {
                     Picture.Image = Image.FromFile(ofd.FileName);
                     string fileName = System.IO.Path.GetFileName(ofd.FileName);
-                    //guna2HtmlLabel28.Text = fileName;
+                    guna2HtmlLabel28.Text = fileName;
                 }
             }
         }
@@ -361,12 +416,12 @@ namespace CISv4
                     Gender.SelectedItem == null ||
                     Birthday.Value == null ||
                     Section.SelectedItem == null ||
-                    MS.SelectedItem == null ||
                     string.IsNullOrWhiteSpace(Height.Text) ||
                     string.IsNullOrWhiteSpace(Weight.Text) ||
                     string.IsNullOrWhiteSpace(Complexion.Text) ||
                     string.IsNullOrWhiteSpace(PlaceofBirth.Text) ||
                     string.IsNullOrWhiteSpace(Street.Text) ||
+                    string.IsNullOrWhiteSpace(StreetName.Text) ||
                     Province.SelectedItem == null ||
                     Municipality.SelectedItem == null ||
                     Barangay.SelectedItem == null ||
@@ -375,9 +430,9 @@ namespace CISv4
 
                     string.IsNullOrWhiteSpace(FBName.Text) ||
                     FBName.Text.Trim() == "fb.com/" ||
-                    //string.IsNullOrWhiteSpace(EmergencyPerson.Text) ||
-                    //string.IsNullOrWhiteSpace(Relationship.Text) ||
-                    //string.IsNullOrWhiteSpace(EmergencyPersonNo.Text) ||
+                    string.IsNullOrWhiteSpace(EmergencyPerson.Text) ||
+                    string.IsNullOrWhiteSpace(Relationship.Text) ||
+                    string.IsNullOrWhiteSpace(EmergencyPersonNo.Text) ||
                     Picture.Image == null)
 
                 {
@@ -405,20 +460,21 @@ namespace CISv4
                 DateTime birthdate = Birthday.Value;
                 string birthplace = PlaceofBirth.Text.Trim();
                 string street = Street.Text.Trim();
+                string streetName = StreetName.Text.Trim();
                 string province = Province.SelectedItem is KeyValuePair<int, string> selectedProvince ? selectedProvince.Value : "";
                 string municipality = Municipality.SelectedItem is KeyValuePair<int, string> selectedMunicipality ? selectedMunicipality.Value : "";
                 string barangay = Barangay.SelectedItem is KeyValuePair<int, string> selectedBarangay ? selectedBarangay.Value : "";
-                string address = $"{street}, {barangay}, {municipality}, {province}";
+                string address = $"{street}, {streetName}, {barangay}, {municipality}, {province}";
                 string contactNumber = TelephoneCellNo.Text.Trim();
                 string email = EmailAddress.Text.Trim();
                 string facebookAccount = FBName.Text.Trim();
-                string module = MS.SelectedItem.ToString();
                 int classYear = DateTime.Now.Year;
                 int sectionId = 0;
 
                 if (Section.SelectedValue != null)
                 {
                     int.TryParse(Section.SelectedValue.ToString(), out sectionId);
+                   
                 }
 
                 if (sectionId == 0)
@@ -447,11 +503,11 @@ namespace CISv4
                     {
                         string query1 = @"INSERT INTO cadet_info 
                 (cadet_id, last_name, first_name, middle_name, suffix, gender, height, weight, complexion, blood_type, 
-                religion, birthdate, birthplace, address, contact_number, email, facebook_account, rank, class_year, module, 
+                religion, birthdate, birthplace, address, contact_number, email, facebook_account, rank, class_year, 
                 profile_picture, section_id, created_at) 
                 VALUES 
                 (@cadetId, @lastName, @firstName, @middleName, @suffix, @gender, @height, @weight, @complexion, @bloodType, 
-                @religion, @birthdate, @birthplace, @address, @contactNumber, @email, @facebookAccount, NULL, @classYear, @module, 
+                @religion, @birthdate, @birthplace, @address, @contactNumber, @email, @facebookAccount, NULL, @classYear, 
                 @profilePicture, @sectionId, NOW())";
 
                         using (MySqlCommand cmd1 = new MySqlCommand(query1, conn, transaction))
@@ -474,7 +530,6 @@ namespace CISv4
                             cmd1.Parameters.AddWithValue("@email", email);
                             cmd1.Parameters.AddWithValue("@facebookAccount", facebookAccount);
                             cmd1.Parameters.AddWithValue("@classYear", classYear);
-                            cmd1.Parameters.AddWithValue("@module", module);
                             cmd1.Parameters.AddWithValue("@profilePicture", profilePicture);
                             cmd1.Parameters.AddWithValue("@sectionId", sectionId);
 
@@ -490,13 +545,13 @@ namespace CISv4
 
                         using (MySqlCommand cmd2 = new MySqlCommand(query2, conn, transaction))
                         {
-                            //cmd2.Parameters.AddWithValue("@father_name", FatherName.Text.Trim());
-                            //cmd2.Parameters.AddWithValue("@mother_name", MotherName.Text.Trim());
-                            //cmd2.Parameters.AddWithValue("@father_occupation", FatherJob.Text.Trim());
-                            //cmd2.Parameters.AddWithValue("@mother_occupation", MotherJob.Text.Trim());
-                            //cmd2.Parameters.AddWithValue("@emergency_contact_name", EmergencyPerson.Text.Trim());
-                            //cmd2.Parameters.AddWithValue("@emergency_contact_relationship", Relationship.Text.Trim());
-                            //cmd2.Parameters.AddWithValue("@emergency_contact_number", EmergencyPersonNo.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@father_name", FatherName.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@mother_name", MotherName.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@father_occupation", FatherJob.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@mother_occupation", MotherJob.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@emergency_contact_name", EmergencyPerson.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@emergency_contact_relationship", Relationship.Text.Trim());
+                            cmd2.Parameters.AddWithValue("@emergency_contact_number", EmergencyPersonNo.Text.Trim());
                             cmd2.Parameters.AddWithValue("@cadet_id", cadetId);
 
                             cmd2.ExecuteNonQuery();
@@ -546,17 +601,16 @@ namespace CISv4
             TelephoneCellNo.Clear();
             EmailAddress.Clear();
             FBName.Clear();
-            //FatherName.Clear();
-            //FatherJob.Clear();
-            //MotherName.Clear();
-            //MotherJob.Clear();
-            //EmergencyPerson.Clear();
-            //Relationship.Clear();
-            //EmergencyPersonNo.Clear();
+            FatherName.Clear();
+            FatherJob.Clear();
+            MotherName.Clear();
+            MotherJob.Clear();
+            EmergencyPerson.Clear();
+            Relationship.Clear();
+            EmergencyPersonNo.Clear();
             Age.Clear();
             Gender.SelectedItem = null;
             BloodType.SelectedItem = null;
-            MS.SelectedItem = null;
             Province.SelectedItem = null;
             Municipality.SelectedItem = null;
             Barangay.SelectedItem = null;
@@ -631,32 +685,32 @@ namespace CISv4
                 StudentNumber.SelectionStart = StudentNumber.Text.Length;
             }
         }
-        //private void EmergencyPersonNo_Leave(object sender, EventArgs e)
-        //{
-        //    string input = EmergencyPersonNo.Text.Trim();
+        private void EmergencyPersonNo_Leave(object sender, EventArgs e)
+        {
+            string input = EmergencyPersonNo.Text.Trim();
 
-        //    if (string.IsNullOrEmpty(input))
-        //        return;
+            if (string.IsNullOrEmpty(input))
+                return;
 
-        //    if (input.Length == 11)
-        //    {
-        //        if (!input.StartsWith("09"))
-        //        {
-        //            MessageBox.Show("Mobile numbers must start with '09'.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            EmergencyPersonNo.Clear();
-        //            EmergencyPersonNo.Focus();
-        //            return;
-        //        }
-        //    }
-        //    else if (input.Length != 8)
-        //    {
-        //        MessageBox.Show("Please enter a valid contact number.\n\n- 11 digits for mobile numbers (must start with '09')\n- 8 digits for landline numbers",
-        //                        "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //        EmergencyPersonNo.Clear();
-        //        EmergencyPersonNo.Focus();
-        //        return;
-        //    }
-        //}
+            if (input.Length == 11)
+            {
+                if (!input.StartsWith("09"))
+                {
+                    MessageBox.Show("Mobile numbers must start with '09'.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    EmergencyPersonNo.Clear();
+                    EmergencyPersonNo.Focus();
+                    return;
+                }
+            }
+            else if (input.Length != 8)
+            {
+                MessageBox.Show("Please enter a valid contact number.\n\n- 11 digits for mobile numbers (must start with '09')\n- 8 digits for landline numbers",
+                                "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                EmergencyPersonNo.Clear();
+                EmergencyPersonNo.Focus();
+                return;
+            }
+        }
         private void TelephoneCellNo_Leave(object sender, EventArgs e)
         {
             string contactNumber = TelephoneCellNo.Text.Trim();
@@ -829,20 +883,25 @@ namespace CISv4
                 e.Handled = true;
             }
         }
+       
+
 
         private void LastName_TextChanged(object sender, EventArgs e)
         {
             CapitalizeWords((Guna.UI2.WinForms.Guna2TextBox)sender);
+            UpdateFullNameLabel();
         }
 
         private void FirstName_TextChanged(object sender, EventArgs e)
         {
             CapitalizeWords((Guna.UI2.WinForms.Guna2TextBox)sender);
+            UpdateFullNameLabel();
         }
 
         private void MiddleName_TextChanged(object sender, EventArgs e)
         {
             CapitalizeWords((Guna.UI2.WinForms.Guna2TextBox)sender);
+            UpdateFullNameLabel();
         }
 
         private void Street_TextChanged(object sender, EventArgs e)
@@ -912,13 +971,17 @@ namespace CISv4
                 ClearForm();
             }
         }
-
-        private void Registration_TextChanged(object sender, EventArgs e)
+        private void UpdateFullNameLabel()
         {
+            string lastName = LastName.Text.Trim();
+            string firstName = FirstName.Text.Trim();
+            string middleName = MiddleName.Text.Trim();
+            string suffix = Suffix.Text.Trim();
 
-        }
-        private void Registration_Click(object sender, EventArgs e)
-        {
+            string middleInitial = string.IsNullOrEmpty(middleName) ? "" : middleName[0] + ".";
+            string fullName = $"{lastName}, {firstName} {middleInitial} {suffix}".Trim();
+
+            guna2HtmlLabel28.Text = fullName;
         }
         private void NextPageBTN_Click(object sender, EventArgs e)
         {
@@ -993,6 +1056,78 @@ namespace CISv4
         private void HomePageBTN_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedTab = HomePage;
+        }
+
+        private void Suffix_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateFullNameLabel();
+        }
+
+        private void StudentNumber_TextChanged(object sender, EventArgs e)
+        {
+            guna2HtmlLabel103.Text = StudentNumber.Text.Trim();
+        }
+
+        private void Section_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Section.SelectedItem is KeyValuePair<int, string> selectedSection)
+            {
+                string campus = selectedSection.Value;
+                guna2HtmlLabel102.Text = $"{campus}";
+            }
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            string input = guna2TextBox2.Text.Replace("-", string.Empty); 
+            string formatted = "";
+
+            if (input.Length > 0)
+            {
+                formatted += input.Substring(0, Math.Min(2, input.Length)); 
+            }
+
+            if (input.Length > 2)
+            {
+                formatted += "-" + input.Substring(2, Math.Min(2, input.Length - 2)); 
+            }
+
+            if (input.Length > 4)
+            {
+                formatted += "-" + input.Substring(4, Math.Min(4, input.Length - 4));
+            }
+            guna2TextBox2.TextChanged -= guna2TextBox2_TextChanged;
+            guna2TextBox2.Text = formatted;
+            guna2TextBox2.SelectionStart = guna2TextBox2.Text.Length;
+            guna2TextBox2.TextChanged += guna2TextBox2_TextChanged;
+
+            if (DateTime.TryParseExact(formatted, "dd-MM-yyyy",
+                                       System.Globalization.CultureInfo.InvariantCulture,
+                                       System.Globalization.DateTimeStyles.None,
+                                       out DateTime parsedDate))
+            {
+
+                if (parsedDate <= DateTime.Today)
+                {
+                    Birthday.Value = parsedDate;
+                }
+                else
+                {
+                    MessageBox.Show("Future dates are not allowed.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    guna2TextBox2.Text = "";
+                }
+            }
+        }
+
+        private void guna2ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadCourses();
+        }
+
+        private void StreetName_TextChanged(object sender, EventArgs e)
+        {
+            CapitalizeWords((Guna.UI2.WinForms.Guna2TextBox)sender);
         }
     }
         //------------------------------------------------------------------------------END OF REGISTRATION--------------------------------------------------------------------------------------
