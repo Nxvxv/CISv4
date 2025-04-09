@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Transactions;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace CISv4
 {
@@ -1008,21 +1010,6 @@ namespace CISv4
             guna2TabControl1.SelectedTab = ModifyPage;
         }
 
-        private void ListCadetsBTN_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedTab = ListofCadets;
-        }
-
-        private void NextPageViewBTN_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedTab = ListofCadets3;
-        }
-
-        private void ViewCadetDetailsBTN_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedTab = ListofCadets2;
-        }
-
         private void PreviousPageViewBTN_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedTab = ListofCadets2;
@@ -1129,6 +1116,274 @@ namespace CISv4
         {
             CapitalizeWords((Guna.UI2.WinForms.Guna2TextBox)sender);
         }
-    }
+
         //------------------------------------------------------------------------------END OF REGISTRATION--------------------------------------------------------------------------------------
+
+        //------------------------------------------------------------------------------LIST OF CADETS-------------------------------------------------------------------------------------------
+
+        private void ListCadetsBTN_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedTab = ListofCadets;
+            LoadCadets();
+        }
+
+        private void NextPageViewBTN_Click(object sender, EventArgs e)
+        {
+            ViewSecondaryDetails(); 
+        }
+
+        private void SearchTXT_TextChanged(object sender, EventArgs e)
+        {
+            SearchCadets();
+        }
+
+        private void ViewCadetDetailsBTN_Click(object sender, EventArgs e)
+        {
+            ViewDetails();
+        }
+
+        private void LoadCadets()
+        {
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT cadet_id AS `Student No`, " +
+                           "TRIM(CONCAT(IFNULL(last_name, ''), ', ', " + 
+                           "IFNULL(first_name, ''), ' ', " + 
+                           "IFNULL(middle_name, ''), ' ', " + 
+                           "IFNULL(suffix, ''))) AS `Full Name`, " + 
+                           "email AS `Email Address`, " + 
+                           "contact_number AS `Contact No` " + 
+                           "FROM cadet_info";
+
+                    using (MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, conn))
+                    {
+                        dataAdapter.Fill(dataTable);
+                    }
+                }
+
+                CadetListDGV.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading cadet data: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void SearchCadets()
+        {
+            string searchTerm = SearchTXT.Text.Trim().ToLower();
+            string filter = string.Empty;
+            string selectedCriteria = SearchCB.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(selectedCriteria))
+            {
+                if (string.IsNullOrEmpty(searchTerm))
+                {
+                    LoadCadets(); 
+                }
+                else
+                {
+                    (CadetListDGV.DataSource as DataTable).DefaultView.RowFilter = string.Format(
+                        "Convert([Student No], 'System.String') LIKE '%{0}%' OR [Full Name] LIKE '%{0}%'",
+                        searchTerm);
+                }
+                return;
+            }
+
+            switch (selectedCriteria)
+            {
+                case "Name":
+                    filter = $"[Full Name] LIKE '%{searchTerm}%'";
+                    break;
+                case "Student No":
+                    filter = $"Convert([Student No], 'System.String') LIKE '%{searchTerm}%'";
+                    break;
+                case "Section":
+                    string query = "SELECT ci.cadet_id AS `Student No`, " +
+                                   "TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', " +
+                                   " IFNULL(ci.first_name, ''), ' ', " +
+                                   "IFNULL(ci.middle_name, ''), ' ', " +
+                                   "IFNULL(ci.suffix, ''))) AS `Full Name`, " +
+                                   "ci.email AS `Email Address`, " +
+                                   "ci.contact_number AS `Contact No`, " +
+                                   "s.campus " + 
+                                   "FROM cadet_info ci " +
+                                   "JOIN section s ON ci.section_id = s.section_id " +
+                                   "WHERE s.campus LIKE '%" + searchTerm + "%'";
+                    try
+                    {
+                        using (MySqlConnection conn = Database.GetConnection())
+                        {
+                            conn.Open();
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
+                                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
+                                DataTable dataTable = new DataTable();
+                                dataAdapter.Fill(dataTable);
+                                CadetListDGV.DataSource = dataTable;
+                                if (CadetListDGV.Columns.Contains("campus"))
+                                {
+                                    CadetListDGV.Columns["campus"].Visible = false;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    break;
+                case "Academic Year":
+                    filter = $"[Class Year] LIKE '%{searchTerm}%'";
+                    break;
+                case "Rank":
+                    filter = $"[Rank] LIKE '%{searchTerm}%'";
+                    break;
+                case "Platoon":
+                   
+                    break;
+                case "Battalion":
+                    filter = $"[Battalion] LIKE '%{searchTerm}%'";
+                    break;
+                default:
+                    if (string.IsNullOrEmpty(searchTerm))
+                    {
+                        LoadCadets();
+                    }
+                    else
+                    {
+                        (CadetListDGV.DataSource as DataTable).DefaultView.RowFilter = string.Format(
+                            "Convert([Student No], 'System.String') LIKE '%{0}%' OR [Full Name] LIKE '%{0}%'",
+                            searchTerm);
+                    }
+                    return;
+            }
+        }
+
+        private void ViewDetails()
+        {
+            if (CadetListDGV.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = CadetListDGV.SelectedRows[0];
+                string cadetId = selectedRow.Cells["Student No"].Value.ToString();
+                string query = "SELECT ci.*, s.*, c.* " +
+                  "FROM cadet_info ci " +
+                  "JOIN section s ON ci.section_id = s.section_id " +
+                  "JOIN course c ON c.course_id = s.course_id " +
+                  "WHERE ci.cadet_id = @cadetId";
+                try
+                {
+                    using (MySqlConnection conn = Database.GetConnection())
+                    {
+                        conn.Open();
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@cadetId", cadetId);
+                            using (MySqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    EnlistmentDateTXT.Value = Convert.ToDateTime(reader["created_at"]);
+                                    StudentNoTXT.Text = reader["cadet_id"].ToString();
+                                    LastNameTXT.Text = reader["last_name"].ToString();
+                                    FirstNameTXT.Text = reader["first_name"].ToString();
+                                    MiddleNameTXT.Text = reader["middle_name"].ToString();
+                                    Suffix.Text = reader["suffix"].ToString();
+                                    GenderTXT.Text = reader["gender"].ToString();
+                                    HeightTXT.Text = reader["height"].ToString();
+                                    WeightTXT.Text = reader["weight"].ToString();
+                                    ComplexionTXT.Text = reader["complexion"].ToString();
+                                    BloodTypeTXT.Text = reader["blood_type"].ToString();
+                                    ReligionTXT.Text = reader["religion"].ToString();
+                                    BirthdateTXT.Value = Convert.ToDateTime(reader["birthdate"]);
+                                    BirthplaceTXT.Text = reader["birthplace"].ToString();
+                                    AddressTXT.Text = reader["address"].ToString();
+                                    CellNoTXT.Text = reader["contact_number"].ToString();
+                                    EmailTXT.Text = reader["email"].ToString();
+                                    FacebookTXT.Text = reader["facebook_account"].ToString();
+
+                                    if (reader["profile_picture"] != DBNull.Value)
+                                    {
+                                        byte[] imageData = (byte[])reader["profile_picture"];
+                                        using (MemoryStream ms = new MemoryStream(imageData))
+                                        {
+                                            picturePB.Image = Image.FromStream(ms);
+                                        }
+                                    }
+
+                                    CollegeDepartmentTXT.Text = reader["department"].ToString();
+                                    CourseTXT.Text = reader["code"].ToString();
+                                    SectionTXT.Text = reader["campus"].ToString();
+                                    YearTXT.Text = reader["year_level"].ToString();
+                                    AgeTXT.Text = CalculateAge(BirthdateTXT.Value).ToString();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No details found for the selected cadet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                        }
+                    }
+                    guna2TabControl1.SelectedTab = ListofCadets2;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a cadet to view details.", "No Row Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void ViewSecondaryDetails()
+        {
+            string cadetId = ListofCadets2.Controls["StudentNoTXT"].Text;
+            string query = "SELECT * FROM secondary_info WHERE cadet_id = @cadetId";
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@cadetId", cadetId);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                guna2TabControl1.SelectedTab = ListofCadets3;
+                                FatherNameTXT.Text = reader["father_name"].ToString();
+                                FatherOccTXT.Text = reader["father_occupation"].ToString();
+                                MotherNameTXT.Text = reader["mother_name"].ToString();
+                                MotherOccTXT.Text = reader["mother_occupation"].ToString();
+                                TelephoneTXT.Text = reader["emergency_contact_number"].ToString();
+                                RelationTXT.Text = reader["emergency_contact_relationship"].ToString();
+                                PersonTXT.Text = reader["emergency_contact_name"].ToString();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No secondary details found for the selected cadet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //----------------------------------------------------------------------------END OF LIST OF CADETS--------------------------------------------------------------------------------------
     }
+
+}

@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CIS));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -186,95 +186,83 @@
             this.ListofCadets = new System.Windows.Forms.TabPage();
             this.ViewCadetDetailsBTN = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel56 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CertificateTypeCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel55 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.GiveCertificateBTN = new Guna.UI2.WinForms.Guna2Button();
             this.SearchBTN = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.StudentNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmailAddressList = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContactNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CadetListDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.SearchCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.SearchTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.ListofCadets2 = new System.Windows.Forms.TabPage();
             this.BackViewListBTN = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox37 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox36 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox35 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox34 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox33 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox32 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox31 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox30 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox29 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AddressTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.GenderTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BloodTypeTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SuffixTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SectionTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CourseTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CollegeDepartmentTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox28 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox27 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.YearTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.NextPageViewBTN = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel59 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel60 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel61 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AgeTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel62 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox14 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BirthplaceTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel63 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel64 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel65 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2TextBox15 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BirthdateTXT = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.ReligionTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel66 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox16 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ComplexionTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel67 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox17 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.WeightTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel68 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox18 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.HeightTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel69 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel70 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel71 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel72 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox19 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FacebookTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel73 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox20 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.EmailTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel74 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel75 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel76 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel77 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.EnlistmentDateTXT = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel78 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel79 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox21 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.LastNameTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Separator8 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2HtmlLabel104 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel105 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox22 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel106 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox23 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CellNoTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel107 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel108 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox24 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MiddleNameTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel109 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox25 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FirstNameTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel110 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox26 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.StudentNoTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.picturePB = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ListofCadets3 = new System.Windows.Forms.TabPage();
             this.guna2Separator9 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator10 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2HtmlLabel57 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TelephoneTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel58 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox38 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox39 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.RelationTXT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PersonTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel111 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox40 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MotherOccTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel112 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox41 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MotherNameTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel113 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox42 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FatherOccTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel114 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox43 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FatherNameTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel115 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PreviousPageViewBTN = new Guna.UI2.WinForms.Guna2Button();
             this.Certificate = new System.Windows.Forms.TabPage();
@@ -352,9 +340,9 @@
             this.guna2GroupBox4.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
             this.ListofCadets.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CadetListDGV)).BeginInit();
             this.ListofCadets2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePB)).BeginInit();
             this.ListofCadets3.SuspendLayout();
             this.Certificate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -2948,14 +2936,14 @@
             this.ListofCadets.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ListofCadets.Controls.Add(this.ViewCadetDetailsBTN);
             this.ListofCadets.Controls.Add(this.guna2HtmlLabel56);
-            this.ListofCadets.Controls.Add(this.guna2ComboBox2);
+            this.ListofCadets.Controls.Add(this.CertificateTypeCB);
             this.ListofCadets.Controls.Add(this.guna2HtmlLabel55);
             this.ListofCadets.Controls.Add(this.guna2Separator7);
-            this.ListofCadets.Controls.Add(this.guna2Button3);
+            this.ListofCadets.Controls.Add(this.GiveCertificateBTN);
             this.ListofCadets.Controls.Add(this.SearchBTN);
-            this.ListofCadets.Controls.Add(this.guna2DataGridView1);
-            this.ListofCadets.Controls.Add(this.guna2ComboBox1);
-            this.ListofCadets.Controls.Add(this.guna2TextBox1);
+            this.ListofCadets.Controls.Add(this.CadetListDGV);
+            this.ListofCadets.Controls.Add(this.SearchCB);
+            this.ListofCadets.Controls.Add(this.SearchTXT);
             this.ListofCadets.Location = new System.Drawing.Point(4, 4);
             this.ListofCadets.Name = "ListofCadets";
             this.ListofCadets.Size = new System.Drawing.Size(1532, 970);
@@ -2996,23 +2984,23 @@
             this.guna2HtmlLabel56.TabIndex = 195;
             this.guna2HtmlLabel56.Text = "Certificate Type:";
             // 
-            // guna2ComboBox2
+            // CertificateTypeCB
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2ComboBox2.BorderRadius = 2;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.ItemHeight = 44;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(1247, 221);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(275, 50);
-            this.guna2ComboBox2.TabIndex = 194;
+            this.CertificateTypeCB.BackColor = System.Drawing.Color.Transparent;
+            this.CertificateTypeCB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.CertificateTypeCB.BorderRadius = 2;
+            this.CertificateTypeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CertificateTypeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CertificateTypeCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CertificateTypeCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CertificateTypeCB.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.CertificateTypeCB.ForeColor = System.Drawing.Color.Black;
+            this.CertificateTypeCB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CertificateTypeCB.ItemHeight = 44;
+            this.CertificateTypeCB.Location = new System.Drawing.Point(1247, 221);
+            this.CertificateTypeCB.Name = "CertificateTypeCB";
+            this.CertificateTypeCB.Size = new System.Drawing.Size(275, 50);
+            this.CertificateTypeCB.TabIndex = 194;
             // 
             // guna2HtmlLabel55
             // 
@@ -3034,28 +3022,28 @@
             this.guna2Separator7.Size = new System.Drawing.Size(275, 10);
             this.guna2Separator7.TabIndex = 193;
             // 
-            // guna2Button3
+            // GiveCertificateBTN
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
-            this.guna2Button3.BorderRadius = 2;
-            this.guna2Button3.BorderThickness = 1;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(130)))), ((int)(((byte)(93)))));
-            this.guna2Button3.HoverState.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.Location = new System.Drawing.Point(1247, 277);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(275, 199);
-            this.guna2Button3.TabIndex = 190;
-            this.guna2Button3.Text = "Give Certificate";
-            this.guna2Button3.UseTransparentBackground = true;
+            this.GiveCertificateBTN.Animated = true;
+            this.GiveCertificateBTN.BackColor = System.Drawing.Color.Transparent;
+            this.GiveCertificateBTN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
+            this.GiveCertificateBTN.BorderRadius = 2;
+            this.GiveCertificateBTN.BorderThickness = 1;
+            this.GiveCertificateBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GiveCertificateBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GiveCertificateBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GiveCertificateBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GiveCertificateBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
+            this.GiveCertificateBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GiveCertificateBTN.ForeColor = System.Drawing.Color.White;
+            this.GiveCertificateBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(130)))), ((int)(((byte)(93)))));
+            this.GiveCertificateBTN.HoverState.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GiveCertificateBTN.Location = new System.Drawing.Point(1247, 277);
+            this.GiveCertificateBTN.Name = "GiveCertificateBTN";
+            this.GiveCertificateBTN.Size = new System.Drawing.Size(275, 199);
+            this.GiveCertificateBTN.TabIndex = 190;
+            this.GiveCertificateBTN.Text = "Give Certificate";
+            this.GiveCertificateBTN.UseTransparentBackground = true;
             // 
             // SearchBTN
             // 
@@ -3080,215 +3068,179 @@
             this.SearchBTN.Text = "Search";
             this.SearchBTN.UseTransparentBackground = true;
             // 
-            // guna2DataGridView1
+            // CadetListDGV
             // 
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            this.guna2DataGridView1.AllowUserToResizeColumns = false;
-            this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.guna2DataGridView1.ColumnHeadersHeight = 32;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StudentNo,
-            this.FullName,
-            this.EmailAddressList,
-            this.ContactNo});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(19, 66);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 40;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.guna2DataGridView1.ShowEditingIcon = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1220, 878);
-            this.guna2DataGridView1.TabIndex = 120;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Bahnschrift", 14F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 32;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Bahnschrift", 14F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CadetListDGV.AllowUserToDeleteRows = false;
+            this.CadetListDGV.AllowUserToResizeColumns = false;
+            this.CadetListDGV.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.CadetListDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.CadetListDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.CadetListDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(83)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CadetListDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.CadetListDGV.ColumnHeadersHeight = 32;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CadetListDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CadetListDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CadetListDGV.Location = new System.Drawing.Point(19, 66);
+            this.CadetListDGV.MultiSelect = false;
+            this.CadetListDGV.Name = "CadetListDGV";
+            this.CadetListDGV.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CadetListDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.CadetListDGV.RowHeadersVisible = false;
+            this.CadetListDGV.RowHeadersWidth = 40;
+            this.CadetListDGV.ShowEditingIcon = false;
+            this.CadetListDGV.Size = new System.Drawing.Size(1220, 878);
+            this.CadetListDGV.TabIndex = 120;
+            this.CadetListDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.CadetListDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.CadetListDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.CadetListDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.CadetListDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.CadetListDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.CadetListDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CadetListDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CadetListDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.CadetListDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Bahnschrift", 14F);
+            this.CadetListDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.CadetListDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.CadetListDGV.ThemeStyle.HeaderStyle.Height = 32;
+            this.CadetListDGV.ThemeStyle.ReadOnly = true;
+            this.CadetListDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.CadetListDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CadetListDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Bahnschrift", 14F);
+            this.CadetListDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CadetListDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.CadetListDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CadetListDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // StudentNo
+            // SearchCB
             // 
-            this.StudentNo.FillWeight = 61.28497F;
-            this.StudentNo.HeaderText = "Student No";
-            this.StudentNo.Name = "StudentNo";
-            this.StudentNo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // FullName
-            // 
-            this.FullName.FillWeight = 138.9007F;
-            this.FullName.HeaderText = "Full Name";
-            this.FullName.Name = "FullName";
-            // 
-            // EmailAddressList
-            // 
-            this.EmailAddressList.FillWeight = 138.9007F;
-            this.EmailAddressList.HeaderText = "Email Address";
-            this.EmailAddressList.Name = "EmailAddressList";
-            // 
-            // ContactNo
-            // 
-            this.ContactNo.FillWeight = 60.91372F;
-            this.ContactNo.HeaderText = "Contact No";
-            this.ContactNo.Name = "ContactNo";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderThickness = 0;
-            this.guna2ComboBox1.DisplayMember = "(none)";
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.ItemHeight = 35;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.SearchCB.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SearchCB.BorderColor = System.Drawing.Color.Transparent;
+            this.SearchCB.BorderThickness = 0;
+            this.SearchCB.DisplayMember = "(none)";
+            this.SearchCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.SearchCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SearchCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchCB.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.SearchCB.ForeColor = System.Drawing.Color.Black;
+            this.SearchCB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchCB.ItemHeight = 35;
+            this.SearchCB.Items.AddRange(new object[] {
             "Name",
-            "Cadet ID",
+            "Student No",
             "Section",
             "Academic Year",
             "Rank",
             "Platoon",
             "Battalion"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(820, 11);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(221, 41);
-            this.guna2ComboBox1.TabIndex = 111;
-            this.guna2ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.SearchCB.Location = new System.Drawing.Point(820, 11);
+            this.SearchCB.Name = "SearchCB";
+            this.SearchCB.Size = new System.Drawing.Size(221, 41);
+            this.SearchCB.TabIndex = 111;
+            this.SearchCB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2TextBox1
+            // SearchTXT
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox1.BorderRadius = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(19, 5);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "Press \"ENTER\" to search";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(1024, 50);
-            this.guna2TextBox1.TabIndex = 106;
+            this.SearchTXT.Animated = true;
+            this.SearchTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.SearchTXT.BorderRadius = 2;
+            this.SearchTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SearchTXT.DefaultText = "";
+            this.SearchTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SearchTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SearchTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SearchTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SearchTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.SearchTXT.ForeColor = System.Drawing.Color.Black;
+            this.SearchTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchTXT.Location = new System.Drawing.Point(19, 5);
+            this.SearchTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.SearchTXT.Name = "SearchTXT";
+            this.SearchTXT.PlaceholderText = "Press \"ENTER\" to search";
+            this.SearchTXT.SelectedText = "";
+            this.SearchTXT.Size = new System.Drawing.Size(1024, 50);
+            this.SearchTXT.TabIndex = 106;
+            this.SearchTXT.TextChanged += new System.EventHandler(this.SearchTXT_TextChanged);
             // 
             // ListofCadets2
             // 
             this.ListofCadets2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ListofCadets2.Controls.Add(this.BackViewListBTN);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox37);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox36);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox35);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox34);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox33);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox32);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox31);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox30);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox29);
+            this.ListofCadets2.Controls.Add(this.AddressTXT);
+            this.ListofCadets2.Controls.Add(this.GenderTXT);
+            this.ListofCadets2.Controls.Add(this.BloodTypeTXT);
+            this.ListofCadets2.Controls.Add(this.SuffixTXT);
+            this.ListofCadets2.Controls.Add(this.SectionTXT);
+            this.ListofCadets2.Controls.Add(this.CourseTXT);
+            this.ListofCadets2.Controls.Add(this.CollegeDepartmentTXT);
             this.ListofCadets2.Controls.Add(this.guna2TextBox28);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox27);
+            this.ListofCadets2.Controls.Add(this.YearTXT);
             this.ListofCadets2.Controls.Add(this.NextPageViewBTN);
-            this.ListofCadets2.Controls.Add(this.guna2HtmlLabel59);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox4);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel60);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel61);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox5);
+            this.ListofCadets2.Controls.Add(this.AgeTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel62);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox14);
+            this.ListofCadets2.Controls.Add(this.BirthplaceTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel63);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel64);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel65);
-            this.ListofCadets2.Controls.Add(this.guna2DateTimePicker1);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox15);
+            this.ListofCadets2.Controls.Add(this.BirthdateTXT);
+            this.ListofCadets2.Controls.Add(this.ReligionTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel66);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox16);
+            this.ListofCadets2.Controls.Add(this.ComplexionTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel67);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox17);
+            this.ListofCadets2.Controls.Add(this.WeightTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel68);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox18);
+            this.ListofCadets2.Controls.Add(this.HeightTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel69);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel70);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel71);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel72);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox19);
+            this.ListofCadets2.Controls.Add(this.FacebookTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel73);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox20);
+            this.ListofCadets2.Controls.Add(this.EmailTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel74);
-            this.ListofCadets2.Controls.Add(this.guna2HtmlLabel75);
-            this.ListofCadets2.Controls.Add(this.guna2HtmlLabel76);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel77);
-            this.ListofCadets2.Controls.Add(this.guna2DateTimePicker2);
+            this.ListofCadets2.Controls.Add(this.EnlistmentDateTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel78);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel79);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox21);
+            this.ListofCadets2.Controls.Add(this.LastNameTXT);
             this.ListofCadets2.Controls.Add(this.guna2Separator8);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel104);
-            this.ListofCadets2.Controls.Add(this.guna2HtmlLabel105);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox22);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel106);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox23);
+            this.ListofCadets2.Controls.Add(this.CellNoTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel107);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel108);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox24);
+            this.ListofCadets2.Controls.Add(this.MiddleNameTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel109);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox25);
+            this.ListofCadets2.Controls.Add(this.FirstNameTXT);
             this.ListofCadets2.Controls.Add(this.guna2HtmlLabel110);
-            this.ListofCadets2.Controls.Add(this.guna2TextBox26);
-            this.ListofCadets2.Controls.Add(this.guna2PictureBox3);
+            this.ListofCadets2.Controls.Add(this.StudentNoTXT);
+            this.ListofCadets2.Controls.Add(this.picturePB);
             this.ListofCadets2.Location = new System.Drawing.Point(4, 4);
             this.ListofCadets2.Name = "ListofCadets2";
             this.ListofCadets2.Padding = new System.Windows.Forms.Padding(3);
@@ -3320,247 +3272,195 @@
             this.BackViewListBTN.UseTransparentBackground = true;
             this.BackViewListBTN.Click += new System.EventHandler(this.BackViewListBTN_Click);
             // 
-            // guna2TextBox37
+            // AddressTXT
             // 
-            this.guna2TextBox37.Animated = true;
-            this.guna2TextBox37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox37.BorderRadius = 2;
-            this.guna2TextBox37.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox37.DefaultText = "";
-            this.guna2TextBox37.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox37.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox37.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox37.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox37.Enabled = false;
-            this.guna2TextBox37.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox37.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox37.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox37.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox37.Location = new System.Drawing.Point(1180, 515);
-            this.guna2TextBox37.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox37.MaxLength = 11;
-            this.guna2TextBox37.Name = "guna2TextBox37";
-            this.guna2TextBox37.PlaceholderText = "";
-            this.guna2TextBox37.ReadOnly = true;
-            this.guna2TextBox37.SelectedText = "";
-            this.guna2TextBox37.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox37.TabIndex = 242;
+            this.AddressTXT.Animated = true;
+            this.AddressTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.AddressTXT.BorderRadius = 2;
+            this.AddressTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddressTXT.DefaultText = "";
+            this.AddressTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AddressTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AddressTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AddressTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AddressTXT.Enabled = false;
+            this.AddressTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddressTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.AddressTXT.ForeColor = System.Drawing.Color.Black;
+            this.AddressTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddressTXT.Location = new System.Drawing.Point(37, 515);
+            this.AddressTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AddressTXT.MaxLength = 11;
+            this.AddressTXT.Name = "AddressTXT";
+            this.AddressTXT.PlaceholderText = "";
+            this.AddressTXT.ReadOnly = true;
+            this.AddressTXT.SelectedText = "";
+            this.AddressTXT.Size = new System.Drawing.Size(1457, 50);
+            this.AddressTXT.TabIndex = 240;
             // 
-            // guna2TextBox36
+            // GenderTXT
             // 
-            this.guna2TextBox36.Animated = true;
-            this.guna2TextBox36.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox36.BorderRadius = 2;
-            this.guna2TextBox36.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox36.DefaultText = "";
-            this.guna2TextBox36.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox36.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox36.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox36.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox36.Enabled = false;
-            this.guna2TextBox36.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox36.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox36.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox36.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox36.Location = new System.Drawing.Point(813, 515);
-            this.guna2TextBox36.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox36.MaxLength = 11;
-            this.guna2TextBox36.Name = "guna2TextBox36";
-            this.guna2TextBox36.PlaceholderText = "";
-            this.guna2TextBox36.ReadOnly = true;
-            this.guna2TextBox36.SelectedText = "";
-            this.guna2TextBox36.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox36.TabIndex = 241;
+            this.GenderTXT.Animated = true;
+            this.GenderTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.GenderTXT.BorderRadius = 2;
+            this.GenderTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.GenderTXT.DefaultText = "";
+            this.GenderTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.GenderTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.GenderTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GenderTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GenderTXT.Enabled = false;
+            this.GenderTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.GenderTXT.ForeColor = System.Drawing.Color.Black;
+            this.GenderTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderTXT.Location = new System.Drawing.Point(958, 749);
+            this.GenderTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.GenderTXT.MaxLength = 11;
+            this.GenderTXT.Name = "GenderTXT";
+            this.GenderTXT.PlaceholderText = "";
+            this.GenderTXT.ReadOnly = true;
+            this.GenderTXT.SelectedText = "";
+            this.GenderTXT.Size = new System.Drawing.Size(169, 50);
+            this.GenderTXT.TabIndex = 239;
             // 
-            // guna2TextBox35
+            // BloodTypeTXT
             // 
-            this.guna2TextBox35.Animated = true;
-            this.guna2TextBox35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox35.BorderRadius = 2;
-            this.guna2TextBox35.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox35.DefaultText = "";
-            this.guna2TextBox35.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox35.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox35.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox35.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox35.Enabled = false;
-            this.guna2TextBox35.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox35.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox35.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox35.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox35.Location = new System.Drawing.Point(444, 515);
-            this.guna2TextBox35.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox35.MaxLength = 11;
-            this.guna2TextBox35.Name = "guna2TextBox35";
-            this.guna2TextBox35.PlaceholderText = "";
-            this.guna2TextBox35.ReadOnly = true;
-            this.guna2TextBox35.SelectedText = "";
-            this.guna2TextBox35.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox35.TabIndex = 240;
+            this.BloodTypeTXT.Animated = true;
+            this.BloodTypeTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.BloodTypeTXT.BorderRadius = 2;
+            this.BloodTypeTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.BloodTypeTXT.DefaultText = "";
+            this.BloodTypeTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.BloodTypeTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.BloodTypeTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BloodTypeTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BloodTypeTXT.Enabled = false;
+            this.BloodTypeTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodTypeTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.BloodTypeTXT.ForeColor = System.Drawing.Color.Black;
+            this.BloodTypeTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodTypeTXT.Location = new System.Drawing.Point(444, 867);
+            this.BloodTypeTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BloodTypeTXT.MaxLength = 11;
+            this.BloodTypeTXT.Name = "BloodTypeTXT";
+            this.BloodTypeTXT.PlaceholderText = "";
+            this.BloodTypeTXT.ReadOnly = true;
+            this.BloodTypeTXT.SelectedText = "";
+            this.BloodTypeTXT.Size = new System.Drawing.Size(99, 50);
+            this.BloodTypeTXT.TabIndex = 238;
             // 
-            // guna2TextBox34
+            // SuffixTXT
             // 
-            this.guna2TextBox34.Animated = true;
-            this.guna2TextBox34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox34.BorderRadius = 2;
-            this.guna2TextBox34.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox34.DefaultText = "";
-            this.guna2TextBox34.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox34.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox34.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox34.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox34.Enabled = false;
-            this.guna2TextBox34.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox34.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox34.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox34.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox34.Location = new System.Drawing.Point(958, 749);
-            this.guna2TextBox34.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox34.MaxLength = 11;
-            this.guna2TextBox34.Name = "guna2TextBox34";
-            this.guna2TextBox34.PlaceholderText = "";
-            this.guna2TextBox34.ReadOnly = true;
-            this.guna2TextBox34.SelectedText = "";
-            this.guna2TextBox34.Size = new System.Drawing.Size(169, 50);
-            this.guna2TextBox34.TabIndex = 239;
+            this.SuffixTXT.Animated = true;
+            this.SuffixTXT.BackColor = System.Drawing.Color.Transparent;
+            this.SuffixTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.SuffixTXT.BorderRadius = 2;
+            this.SuffixTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SuffixTXT.DefaultText = "";
+            this.SuffixTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SuffixTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SuffixTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SuffixTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SuffixTXT.Enabled = false;
+            this.SuffixTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SuffixTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.SuffixTXT.ForeColor = System.Drawing.Color.Black;
+            this.SuffixTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SuffixTXT.Location = new System.Drawing.Point(683, 359);
+            this.SuffixTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.SuffixTXT.MaxLength = 7;
+            this.SuffixTXT.Name = "SuffixTXT";
+            this.SuffixTXT.PlaceholderText = "";
+            this.SuffixTXT.SelectedText = "";
+            this.SuffixTXT.ShadowDecoration.BorderRadius = 5;
+            this.SuffixTXT.ShadowDecoration.Depth = 10;
+            this.SuffixTXT.Size = new System.Drawing.Size(121, 50);
+            this.SuffixTXT.TabIndex = 237;
             // 
-            // guna2TextBox33
+            // SectionTXT
             // 
-            this.guna2TextBox33.Animated = true;
-            this.guna2TextBox33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox33.BorderRadius = 2;
-            this.guna2TextBox33.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox33.DefaultText = "";
-            this.guna2TextBox33.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox33.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox33.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox33.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox33.Enabled = false;
-            this.guna2TextBox33.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox33.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox33.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox33.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox33.Location = new System.Drawing.Point(444, 867);
-            this.guna2TextBox33.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox33.MaxLength = 11;
-            this.guna2TextBox33.Name = "guna2TextBox33";
-            this.guna2TextBox33.PlaceholderText = "";
-            this.guna2TextBox33.ReadOnly = true;
-            this.guna2TextBox33.SelectedText = "";
-            this.guna2TextBox33.Size = new System.Drawing.Size(99, 50);
-            this.guna2TextBox33.TabIndex = 238;
+            this.SectionTXT.Animated = true;
+            this.SectionTXT.BackColor = System.Drawing.Color.Transparent;
+            this.SectionTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.SectionTXT.BorderRadius = 2;
+            this.SectionTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SectionTXT.DefaultText = "";
+            this.SectionTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SectionTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SectionTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SectionTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SectionTXT.Enabled = false;
+            this.SectionTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SectionTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.SectionTXT.ForeColor = System.Drawing.Color.Black;
+            this.SectionTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SectionTXT.Location = new System.Drawing.Point(771, 245);
+            this.SectionTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.SectionTXT.MaxLength = 7;
+            this.SectionTXT.Name = "SectionTXT";
+            this.SectionTXT.PlaceholderText = "";
+            this.SectionTXT.SelectedText = "";
+            this.SectionTXT.ShadowDecoration.BorderRadius = 5;
+            this.SectionTXT.ShadowDecoration.Depth = 10;
+            this.SectionTXT.Size = new System.Drawing.Size(85, 50);
+            this.SectionTXT.TabIndex = 236;
             // 
-            // guna2TextBox32
+            // CourseTXT
             // 
-            this.guna2TextBox32.Animated = true;
-            this.guna2TextBox32.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox32.BorderRadius = 2;
-            this.guna2TextBox32.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox32.DefaultText = "";
-            this.guna2TextBox32.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox32.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox32.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox32.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox32.Enabled = false;
-            this.guna2TextBox32.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox32.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox32.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox32.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox32.Location = new System.Drawing.Point(683, 359);
-            this.guna2TextBox32.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox32.MaxLength = 7;
-            this.guna2TextBox32.Name = "guna2TextBox32";
-            this.guna2TextBox32.PlaceholderText = "";
-            this.guna2TextBox32.SelectedText = "";
-            this.guna2TextBox32.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox32.ShadowDecoration.Depth = 10;
-            this.guna2TextBox32.Size = new System.Drawing.Size(121, 50);
-            this.guna2TextBox32.TabIndex = 237;
+            this.CourseTXT.Animated = true;
+            this.CourseTXT.BackColor = System.Drawing.Color.Transparent;
+            this.CourseTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.CourseTXT.BorderRadius = 2;
+            this.CourseTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CourseTXT.DefaultText = "";
+            this.CourseTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CourseTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CourseTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CourseTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CourseTXT.Enabled = false;
+            this.CourseTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CourseTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.CourseTXT.ForeColor = System.Drawing.Color.Black;
+            this.CourseTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CourseTXT.Location = new System.Drawing.Point(617, 245);
+            this.CourseTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CourseTXT.MaxLength = 7;
+            this.CourseTXT.Name = "CourseTXT";
+            this.CourseTXT.PlaceholderText = "";
+            this.CourseTXT.SelectedText = "";
+            this.CourseTXT.ShadowDecoration.BorderRadius = 5;
+            this.CourseTXT.ShadowDecoration.Depth = 10;
+            this.CourseTXT.Size = new System.Drawing.Size(144, 50);
+            this.CourseTXT.TabIndex = 235;
             // 
-            // guna2TextBox31
+            // CollegeDepartmentTXT
             // 
-            this.guna2TextBox31.Animated = true;
-            this.guna2TextBox31.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox31.BorderRadius = 2;
-            this.guna2TextBox31.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox31.DefaultText = "";
-            this.guna2TextBox31.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox31.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox31.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox31.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox31.Enabled = false;
-            this.guna2TextBox31.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox31.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox31.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox31.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox31.Location = new System.Drawing.Point(771, 245);
-            this.guna2TextBox31.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox31.MaxLength = 7;
-            this.guna2TextBox31.Name = "guna2TextBox31";
-            this.guna2TextBox31.PlaceholderText = "";
-            this.guna2TextBox31.SelectedText = "";
-            this.guna2TextBox31.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox31.ShadowDecoration.Depth = 10;
-            this.guna2TextBox31.Size = new System.Drawing.Size(85, 50);
-            this.guna2TextBox31.TabIndex = 236;
-            // 
-            // guna2TextBox30
-            // 
-            this.guna2TextBox30.Animated = true;
-            this.guna2TextBox30.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox30.BorderRadius = 2;
-            this.guna2TextBox30.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox30.DefaultText = "";
-            this.guna2TextBox30.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox30.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox30.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox30.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox30.Enabled = false;
-            this.guna2TextBox30.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox30.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox30.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox30.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox30.Location = new System.Drawing.Point(617, 245);
-            this.guna2TextBox30.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox30.MaxLength = 7;
-            this.guna2TextBox30.Name = "guna2TextBox30";
-            this.guna2TextBox30.PlaceholderText = "";
-            this.guna2TextBox30.SelectedText = "";
-            this.guna2TextBox30.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox30.ShadowDecoration.Depth = 10;
-            this.guna2TextBox30.Size = new System.Drawing.Size(144, 50);
-            this.guna2TextBox30.TabIndex = 235;
-            // 
-            // guna2TextBox29
-            // 
-            this.guna2TextBox29.Animated = true;
-            this.guna2TextBox29.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox29.BorderRadius = 2;
-            this.guna2TextBox29.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox29.DefaultText = "";
-            this.guna2TextBox29.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox29.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox29.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox29.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox29.Enabled = false;
-            this.guna2TextBox29.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox29.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox29.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox29.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox29.Location = new System.Drawing.Point(37, 245);
-            this.guna2TextBox29.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox29.MaxLength = 7;
-            this.guna2TextBox29.Name = "guna2TextBox29";
-            this.guna2TextBox29.PlaceholderText = "";
-            this.guna2TextBox29.SelectedText = "";
-            this.guna2TextBox29.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox29.ShadowDecoration.Depth = 10;
-            this.guna2TextBox29.Size = new System.Drawing.Size(570, 50);
-            this.guna2TextBox29.TabIndex = 234;
+            this.CollegeDepartmentTXT.Animated = true;
+            this.CollegeDepartmentTXT.BackColor = System.Drawing.Color.Transparent;
+            this.CollegeDepartmentTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.CollegeDepartmentTXT.BorderRadius = 2;
+            this.CollegeDepartmentTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CollegeDepartmentTXT.DefaultText = "";
+            this.CollegeDepartmentTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CollegeDepartmentTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CollegeDepartmentTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CollegeDepartmentTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CollegeDepartmentTXT.Enabled = false;
+            this.CollegeDepartmentTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CollegeDepartmentTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.CollegeDepartmentTXT.ForeColor = System.Drawing.Color.Black;
+            this.CollegeDepartmentTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CollegeDepartmentTXT.Location = new System.Drawing.Point(37, 245);
+            this.CollegeDepartmentTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CollegeDepartmentTXT.MaxLength = 7;
+            this.CollegeDepartmentTXT.Name = "CollegeDepartmentTXT";
+            this.CollegeDepartmentTXT.PlaceholderText = "";
+            this.CollegeDepartmentTXT.SelectedText = "";
+            this.CollegeDepartmentTXT.ShadowDecoration.BorderRadius = 5;
+            this.CollegeDepartmentTXT.ShadowDecoration.Depth = 10;
+            this.CollegeDepartmentTXT.Size = new System.Drawing.Size(570, 50);
+            this.CollegeDepartmentTXT.TabIndex = 234;
             // 
             // guna2TextBox28
             // 
@@ -3590,33 +3490,33 @@
             this.guna2TextBox28.Size = new System.Drawing.Size(85, 50);
             this.guna2TextBox28.TabIndex = 233;
             // 
-            // guna2TextBox27
+            // YearTXT
             // 
-            this.guna2TextBox27.Animated = true;
-            this.guna2TextBox27.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox27.BorderRadius = 2;
-            this.guna2TextBox27.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox27.DefaultText = "";
-            this.guna2TextBox27.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox27.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox27.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox27.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox27.Enabled = false;
-            this.guna2TextBox27.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox27.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox27.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox27.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox27.Location = new System.Drawing.Point(265, 138);
-            this.guna2TextBox27.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox27.MaxLength = 7;
-            this.guna2TextBox27.Name = "guna2TextBox27";
-            this.guna2TextBox27.PlaceholderText = "";
-            this.guna2TextBox27.SelectedText = "";
-            this.guna2TextBox27.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox27.ShadowDecoration.Depth = 10;
-            this.guna2TextBox27.Size = new System.Drawing.Size(61, 50);
-            this.guna2TextBox27.TabIndex = 232;
+            this.YearTXT.Animated = true;
+            this.YearTXT.BackColor = System.Drawing.Color.Transparent;
+            this.YearTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.YearTXT.BorderRadius = 2;
+            this.YearTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.YearTXT.DefaultText = "";
+            this.YearTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.YearTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.YearTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.YearTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.YearTXT.Enabled = false;
+            this.YearTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.YearTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.YearTXT.ForeColor = System.Drawing.Color.Black;
+            this.YearTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.YearTXT.Location = new System.Drawing.Point(265, 138);
+            this.YearTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.YearTXT.MaxLength = 7;
+            this.YearTXT.Name = "YearTXT";
+            this.YearTXT.PlaceholderText = "";
+            this.YearTXT.SelectedText = "";
+            this.YearTXT.ShadowDecoration.BorderRadius = 5;
+            this.YearTXT.ShadowDecoration.Depth = 10;
+            this.YearTXT.Size = new System.Drawing.Size(61, 50);
+            this.YearTXT.TabIndex = 232;
             // 
             // NextPageViewBTN
             // 
@@ -3642,40 +3542,6 @@
             this.NextPageViewBTN.UseTransparentBackground = true;
             this.NextPageViewBTN.Click += new System.EventHandler(this.NextPageViewBTN_Click);
             // 
-            // guna2HtmlLabel59
-            // 
-            this.guna2HtmlLabel59.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel59.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel59.Location = new System.Drawing.Point(181, 484);
-            this.guna2HtmlLabel59.Name = "guna2HtmlLabel59";
-            this.guna2HtmlLabel59.Size = new System.Drawing.Size(123, 26);
-            this.guna2HtmlLabel59.TabIndex = 227;
-            this.guna2HtmlLabel59.Text = "Street Name:";
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.Animated = true;
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox4.BorderRadius = 2;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.Enabled = false;
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(181, 515);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(208, 50);
-            this.guna2TextBox4.TabIndex = 226;
-            // 
             // guna2HtmlLabel60
             // 
             this.guna2HtmlLabel60.BackColor = System.Drawing.Color.Transparent;
@@ -3696,31 +3562,31 @@
             this.guna2HtmlLabel61.TabIndex = 223;
             this.guna2HtmlLabel61.Text = "Age:";
             // 
-            // guna2TextBox5
+            // AgeTXT
             // 
-            this.guna2TextBox5.Animated = true;
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox5.BorderRadius = 2;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.Enabled = false;
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(444, 749);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox5.MaxLength = 11;
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.ReadOnly = true;
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(99, 50);
-            this.guna2TextBox5.TabIndex = 222;
+            this.AgeTXT.Animated = true;
+            this.AgeTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.AgeTXT.BorderRadius = 2;
+            this.AgeTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeTXT.DefaultText = "";
+            this.AgeTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AgeTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AgeTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AgeTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AgeTXT.Enabled = false;
+            this.AgeTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AgeTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.AgeTXT.ForeColor = System.Drawing.Color.Black;
+            this.AgeTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AgeTXT.Location = new System.Drawing.Point(444, 749);
+            this.AgeTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AgeTXT.MaxLength = 11;
+            this.AgeTXT.Name = "AgeTXT";
+            this.AgeTXT.PlaceholderText = "";
+            this.AgeTXT.ReadOnly = true;
+            this.AgeTXT.SelectedText = "";
+            this.AgeTXT.Size = new System.Drawing.Size(99, 50);
+            this.AgeTXT.TabIndex = 222;
             // 
             // guna2HtmlLabel62
             // 
@@ -3732,29 +3598,29 @@
             this.guna2HtmlLabel62.TabIndex = 221;
             this.guna2HtmlLabel62.Text = "Place of Birth:";
             // 
-            // guna2TextBox14
+            // BirthplaceTXT
             // 
-            this.guna2TextBox14.Animated = true;
-            this.guna2TextBox14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox14.BorderRadius = 2;
-            this.guna2TextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox14.DefaultText = "";
-            this.guna2TextBox14.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox14.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox14.Enabled = false;
-            this.guna2TextBox14.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox14.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox14.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox14.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox14.Location = new System.Drawing.Point(598, 749);
-            this.guna2TextBox14.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox14.Name = "guna2TextBox14";
-            this.guna2TextBox14.PlaceholderText = "";
-            this.guna2TextBox14.SelectedText = "";
-            this.guna2TextBox14.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox14.TabIndex = 220;
+            this.BirthplaceTXT.Animated = true;
+            this.BirthplaceTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.BirthplaceTXT.BorderRadius = 2;
+            this.BirthplaceTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.BirthplaceTXT.DefaultText = "";
+            this.BirthplaceTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.BirthplaceTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.BirthplaceTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BirthplaceTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BirthplaceTXT.Enabled = false;
+            this.BirthplaceTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BirthplaceTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.BirthplaceTXT.ForeColor = System.Drawing.Color.Black;
+            this.BirthplaceTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BirthplaceTXT.Location = new System.Drawing.Point(598, 749);
+            this.BirthplaceTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BirthplaceTXT.Name = "BirthplaceTXT";
+            this.BirthplaceTXT.PlaceholderText = "";
+            this.BirthplaceTXT.SelectedText = "";
+            this.BirthplaceTXT.Size = new System.Drawing.Size(314, 50);
+            this.BirthplaceTXT.TabIndex = 220;
             // 
             // guna2HtmlLabel63
             // 
@@ -3786,53 +3652,53 @@
             this.guna2HtmlLabel65.TabIndex = 214;
             this.guna2HtmlLabel65.Text = "Year:";
             // 
-            // guna2DateTimePicker1
+            // BirthdateTXT
             // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderRadius = 2;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomFormat = "";
-            this.guna2DateTimePicker1.Enabled = false;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(37, 749);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(352, 50);
-            this.guna2DateTimePicker1.TabIndex = 213;
-            this.guna2DateTimePicker1.UseTransparentBackground = true;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 3, 3, 0, 0, 0, 0);
+            this.BirthdateTXT.Animated = true;
+            this.BirthdateTXT.BackColor = System.Drawing.Color.Transparent;
+            this.BirthdateTXT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BirthdateTXT.BorderColor = System.Drawing.Color.Transparent;
+            this.BirthdateTXT.BorderRadius = 2;
+            this.BirthdateTXT.Checked = true;
+            this.BirthdateTXT.CustomFormat = "";
+            this.BirthdateTXT.Enabled = false;
+            this.BirthdateTXT.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.BirthdateTXT.FocusedColor = System.Drawing.Color.WhiteSmoke;
+            this.BirthdateTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.BirthdateTXT.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.BirthdateTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BirthdateTXT.Location = new System.Drawing.Point(37, 749);
+            this.BirthdateTXT.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.BirthdateTXT.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
+            this.BirthdateTXT.Name = "BirthdateTXT";
+            this.BirthdateTXT.Size = new System.Drawing.Size(352, 50);
+            this.BirthdateTXT.TabIndex = 213;
+            this.BirthdateTXT.UseTransparentBackground = true;
+            this.BirthdateTXT.Value = new System.DateTime(2025, 3, 3, 0, 0, 0, 0);
             // 
-            // guna2TextBox15
+            // ReligionTXT
             // 
-            this.guna2TextBox15.Animated = true;
-            this.guna2TextBox15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox15.BorderRadius = 2;
-            this.guna2TextBox15.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox15.DefaultText = "";
-            this.guna2TextBox15.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox15.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox15.Enabled = false;
-            this.guna2TextBox15.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox15.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox15.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox15.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox15.Location = new System.Drawing.Point(1180, 629);
-            this.guna2TextBox15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox15.Name = "guna2TextBox15";
-            this.guna2TextBox15.PlaceholderText = "";
-            this.guna2TextBox15.SelectedText = "";
-            this.guna2TextBox15.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox15.TabIndex = 212;
+            this.ReligionTXT.Animated = true;
+            this.ReligionTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.ReligionTXT.BorderRadius = 2;
+            this.ReligionTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ReligionTXT.DefaultText = "";
+            this.ReligionTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ReligionTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ReligionTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ReligionTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ReligionTXT.Enabled = false;
+            this.ReligionTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ReligionTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.ReligionTXT.ForeColor = System.Drawing.Color.Black;
+            this.ReligionTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ReligionTXT.Location = new System.Drawing.Point(1180, 629);
+            this.ReligionTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ReligionTXT.Name = "ReligionTXT";
+            this.ReligionTXT.PlaceholderText = "";
+            this.ReligionTXT.SelectedText = "";
+            this.ReligionTXT.Size = new System.Drawing.Size(314, 50);
+            this.ReligionTXT.TabIndex = 212;
             // 
             // guna2HtmlLabel66
             // 
@@ -3844,29 +3710,29 @@
             this.guna2HtmlLabel66.TabIndex = 211;
             this.guna2HtmlLabel66.Text = "Religion:";
             // 
-            // guna2TextBox16
+            // ComplexionTXT
             // 
-            this.guna2TextBox16.Animated = true;
-            this.guna2TextBox16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox16.BorderRadius = 2;
-            this.guna2TextBox16.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox16.DefaultText = "";
-            this.guna2TextBox16.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox16.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox16.Enabled = false;
-            this.guna2TextBox16.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox16.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox16.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox16.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox16.Location = new System.Drawing.Point(1180, 749);
-            this.guna2TextBox16.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox16.Name = "guna2TextBox16";
-            this.guna2TextBox16.PlaceholderText = "";
-            this.guna2TextBox16.SelectedText = "";
-            this.guna2TextBox16.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox16.TabIndex = 210;
+            this.ComplexionTXT.Animated = true;
+            this.ComplexionTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.ComplexionTXT.BorderRadius = 2;
+            this.ComplexionTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ComplexionTXT.DefaultText = "";
+            this.ComplexionTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ComplexionTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ComplexionTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ComplexionTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ComplexionTXT.Enabled = false;
+            this.ComplexionTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComplexionTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.ComplexionTXT.ForeColor = System.Drawing.Color.Black;
+            this.ComplexionTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComplexionTXT.Location = new System.Drawing.Point(1180, 749);
+            this.ComplexionTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ComplexionTXT.Name = "ComplexionTXT";
+            this.ComplexionTXT.PlaceholderText = "";
+            this.ComplexionTXT.SelectedText = "";
+            this.ComplexionTXT.Size = new System.Drawing.Size(314, 50);
+            this.ComplexionTXT.TabIndex = 210;
             // 
             // guna2HtmlLabel67
             // 
@@ -3878,30 +3744,30 @@
             this.guna2HtmlLabel67.TabIndex = 209;
             this.guna2HtmlLabel67.Text = "Complexion:";
             // 
-            // guna2TextBox17
+            // WeightTXT
             // 
-            this.guna2TextBox17.Animated = true;
-            this.guna2TextBox17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox17.BorderRadius = 2;
-            this.guna2TextBox17.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox17.DefaultText = "";
-            this.guna2TextBox17.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox17.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox17.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox17.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox17.Enabled = false;
-            this.guna2TextBox17.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox17.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox17.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox17.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox17.Location = new System.Drawing.Point(249, 867);
-            this.guna2TextBox17.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox17.MaxLength = 3;
-            this.guna2TextBox17.Name = "guna2TextBox17";
-            this.guna2TextBox17.PlaceholderText = "";
-            this.guna2TextBox17.SelectedText = "";
-            this.guna2TextBox17.Size = new System.Drawing.Size(140, 50);
-            this.guna2TextBox17.TabIndex = 208;
+            this.WeightTXT.Animated = true;
+            this.WeightTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.WeightTXT.BorderRadius = 2;
+            this.WeightTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.WeightTXT.DefaultText = "";
+            this.WeightTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.WeightTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.WeightTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.WeightTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.WeightTXT.Enabled = false;
+            this.WeightTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.WeightTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.WeightTXT.ForeColor = System.Drawing.Color.Black;
+            this.WeightTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.WeightTXT.Location = new System.Drawing.Point(249, 867);
+            this.WeightTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.WeightTXT.MaxLength = 3;
+            this.WeightTXT.Name = "WeightTXT";
+            this.WeightTXT.PlaceholderText = "";
+            this.WeightTXT.SelectedText = "";
+            this.WeightTXT.Size = new System.Drawing.Size(140, 50);
+            this.WeightTXT.TabIndex = 208;
             // 
             // guna2HtmlLabel68
             // 
@@ -3913,30 +3779,30 @@
             this.guna2HtmlLabel68.TabIndex = 207;
             this.guna2HtmlLabel68.Text = "Weight:";
             // 
-            // guna2TextBox18
+            // HeightTXT
             // 
-            this.guna2TextBox18.Animated = true;
-            this.guna2TextBox18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox18.BorderRadius = 2;
-            this.guna2TextBox18.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox18.DefaultText = "";
-            this.guna2TextBox18.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox18.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox18.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox18.Enabled = false;
-            this.guna2TextBox18.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox18.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox18.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox18.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox18.Location = new System.Drawing.Point(37, 867);
-            this.guna2TextBox18.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox18.MaxLength = 3;
-            this.guna2TextBox18.Name = "guna2TextBox18";
-            this.guna2TextBox18.PlaceholderText = "";
-            this.guna2TextBox18.SelectedText = "";
-            this.guna2TextBox18.Size = new System.Drawing.Size(140, 50);
-            this.guna2TextBox18.TabIndex = 206;
+            this.HeightTXT.Animated = true;
+            this.HeightTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.HeightTXT.BorderRadius = 2;
+            this.HeightTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HeightTXT.DefaultText = "";
+            this.HeightTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.HeightTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.HeightTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.HeightTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.HeightTXT.Enabled = false;
+            this.HeightTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.HeightTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.HeightTXT.ForeColor = System.Drawing.Color.Black;
+            this.HeightTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.HeightTXT.Location = new System.Drawing.Point(37, 867);
+            this.HeightTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HeightTXT.MaxLength = 3;
+            this.HeightTXT.Name = "HeightTXT";
+            this.HeightTXT.PlaceholderText = "";
+            this.HeightTXT.SelectedText = "";
+            this.HeightTXT.Size = new System.Drawing.Size(140, 50);
+            this.HeightTXT.TabIndex = 206;
             // 
             // guna2HtmlLabel69
             // 
@@ -3978,29 +3844,29 @@
             this.guna2HtmlLabel72.TabIndex = 200;
             this.guna2HtmlLabel72.Text = "Facebook Account:";
             // 
-            // guna2TextBox19
+            // FacebookTXT
             // 
-            this.guna2TextBox19.Animated = true;
-            this.guna2TextBox19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox19.BorderRadius = 2;
-            this.guna2TextBox19.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox19.DefaultText = "";
-            this.guna2TextBox19.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox19.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox19.Enabled = false;
-            this.guna2TextBox19.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox19.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox19.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox19.Location = new System.Drawing.Point(813, 629);
-            this.guna2TextBox19.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox19.Name = "guna2TextBox19";
-            this.guna2TextBox19.PlaceholderText = "";
-            this.guna2TextBox19.SelectedText = "";
-            this.guna2TextBox19.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox19.TabIndex = 199;
+            this.FacebookTXT.Animated = true;
+            this.FacebookTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.FacebookTXT.BorderRadius = 2;
+            this.FacebookTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FacebookTXT.DefaultText = "";
+            this.FacebookTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FacebookTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FacebookTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FacebookTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FacebookTXT.Enabled = false;
+            this.FacebookTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FacebookTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.FacebookTXT.ForeColor = System.Drawing.Color.Black;
+            this.FacebookTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FacebookTXT.Location = new System.Drawing.Point(813, 629);
+            this.FacebookTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FacebookTXT.Name = "FacebookTXT";
+            this.FacebookTXT.PlaceholderText = "";
+            this.FacebookTXT.SelectedText = "";
+            this.FacebookTXT.Size = new System.Drawing.Size(314, 50);
+            this.FacebookTXT.TabIndex = 199;
             // 
             // guna2HtmlLabel73
             // 
@@ -4012,59 +3878,39 @@
             this.guna2HtmlLabel73.TabIndex = 198;
             this.guna2HtmlLabel73.Text = "Email Address:";
             // 
-            // guna2TextBox20
+            // EmailTXT
             // 
-            this.guna2TextBox20.Animated = true;
-            this.guna2TextBox20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox20.BorderRadius = 2;
-            this.guna2TextBox20.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox20.DefaultText = "";
-            this.guna2TextBox20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox20.Enabled = false;
-            this.guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox20.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox20.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox20.Location = new System.Drawing.Point(444, 629);
-            this.guna2TextBox20.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox20.Name = "guna2TextBox20";
-            this.guna2TextBox20.PlaceholderText = "";
-            this.guna2TextBox20.SelectedText = "";
-            this.guna2TextBox20.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox20.TabIndex = 197;
+            this.EmailTXT.Animated = true;
+            this.EmailTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.EmailTXT.BorderRadius = 2;
+            this.EmailTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailTXT.DefaultText = "";
+            this.EmailTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmailTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmailTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTXT.Enabled = false;
+            this.EmailTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.EmailTXT.ForeColor = System.Drawing.Color.Black;
+            this.EmailTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTXT.Location = new System.Drawing.Point(444, 629);
+            this.EmailTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.EmailTXT.Name = "EmailTXT";
+            this.EmailTXT.PlaceholderText = "";
+            this.EmailTXT.SelectedText = "";
+            this.EmailTXT.Size = new System.Drawing.Size(314, 50);
+            this.EmailTXT.TabIndex = 197;
             // 
             // guna2HtmlLabel74
             // 
             this.guna2HtmlLabel74.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel74.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel74.Location = new System.Drawing.Point(444, 484);
+            this.guna2HtmlLabel74.Location = new System.Drawing.Point(37, 484);
             this.guna2HtmlLabel74.Name = "guna2HtmlLabel74";
-            this.guna2HtmlLabel74.Size = new System.Drawing.Size(87, 26);
+            this.guna2HtmlLabel74.Size = new System.Drawing.Size(72, 26);
             this.guna2HtmlLabel74.TabIndex = 195;
-            this.guna2HtmlLabel74.Text = "Province:";
-            // 
-            // guna2HtmlLabel75
-            // 
-            this.guna2HtmlLabel75.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel75.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel75.Location = new System.Drawing.Point(813, 484);
-            this.guna2HtmlLabel75.Name = "guna2HtmlLabel75";
-            this.guna2HtmlLabel75.Size = new System.Drawing.Size(158, 26);
-            this.guna2HtmlLabel75.TabIndex = 193;
-            this.guna2HtmlLabel75.Text = "Municipality/City:";
-            // 
-            // guna2HtmlLabel76
-            // 
-            this.guna2HtmlLabel76.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel76.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel76.Location = new System.Drawing.Point(1180, 484);
-            this.guna2HtmlLabel76.Name = "guna2HtmlLabel76";
-            this.guna2HtmlLabel76.Size = new System.Drawing.Size(95, 26);
-            this.guna2HtmlLabel76.TabIndex = 191;
-            this.guna2HtmlLabel76.Text = "Barangay:";
+            this.guna2HtmlLabel74.Text = "Adress:";
             // 
             // guna2HtmlLabel77
             // 
@@ -4076,28 +3922,28 @@
             this.guna2HtmlLabel77.TabIndex = 188;
             this.guna2HtmlLabel77.Text = "MS:";
             // 
-            // guna2DateTimePicker2
+            // EnlistmentDateTXT
             // 
-            this.guna2DateTimePicker2.Animated = true;
-            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker2.BorderRadius = 2;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.Enabled = false;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePicker2.FocusedColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(429, 138);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(314, 50);
-            this.guna2DateTimePicker2.TabIndex = 186;
-            this.guna2DateTimePicker2.UseTransparentBackground = true;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2025, 3, 18, 11, 55, 30, 895);
+            this.EnlistmentDateTXT.Animated = true;
+            this.EnlistmentDateTXT.BackColor = System.Drawing.Color.Transparent;
+            this.EnlistmentDateTXT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EnlistmentDateTXT.BorderColor = System.Drawing.Color.Transparent;
+            this.EnlistmentDateTXT.BorderRadius = 2;
+            this.EnlistmentDateTXT.Checked = true;
+            this.EnlistmentDateTXT.Enabled = false;
+            this.EnlistmentDateTXT.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.EnlistmentDateTXT.FocusedColor = System.Drawing.Color.WhiteSmoke;
+            this.EnlistmentDateTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.EnlistmentDateTXT.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.EnlistmentDateTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EnlistmentDateTXT.Location = new System.Drawing.Point(429, 138);
+            this.EnlistmentDateTXT.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.EnlistmentDateTXT.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
+            this.EnlistmentDateTXT.Name = "EnlistmentDateTXT";
+            this.EnlistmentDateTXT.Size = new System.Drawing.Size(314, 50);
+            this.EnlistmentDateTXT.TabIndex = 186;
+            this.EnlistmentDateTXT.UseTransparentBackground = true;
+            this.EnlistmentDateTXT.Value = new System.DateTime(2025, 3, 18, 11, 55, 30, 895);
             // 
             // guna2HtmlLabel78
             // 
@@ -4119,32 +3965,32 @@
             this.guna2HtmlLabel79.TabIndex = 184;
             this.guna2HtmlLabel79.Text = "Student No:";
             // 
-            // guna2TextBox21
+            // LastNameTXT
             // 
-            this.guna2TextBox21.Animated = true;
-            this.guna2TextBox21.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox21.BorderRadius = 2;
-            this.guna2TextBox21.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox21.DefaultText = "";
-            this.guna2TextBox21.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox21.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox21.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox21.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox21.Enabled = false;
-            this.guna2TextBox21.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox21.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox21.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox21.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox21.Location = new System.Drawing.Point(37, 359);
-            this.guna2TextBox21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox21.Name = "guna2TextBox21";
-            this.guna2TextBox21.PlaceholderText = "";
-            this.guna2TextBox21.SelectedText = "";
-            this.guna2TextBox21.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox21.ShadowDecoration.Depth = 10;
-            this.guna2TextBox21.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox21.TabIndex = 183;
+            this.LastNameTXT.Animated = true;
+            this.LastNameTXT.BackColor = System.Drawing.Color.Transparent;
+            this.LastNameTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.LastNameTXT.BorderRadius = 2;
+            this.LastNameTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LastNameTXT.DefaultText = "";
+            this.LastNameTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LastNameTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LastNameTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LastNameTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LastNameTXT.Enabled = false;
+            this.LastNameTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LastNameTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.LastNameTXT.ForeColor = System.Drawing.Color.Black;
+            this.LastNameTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LastNameTXT.Location = new System.Drawing.Point(37, 359);
+            this.LastNameTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LastNameTXT.Name = "LastNameTXT";
+            this.LastNameTXT.PlaceholderText = "";
+            this.LastNameTXT.SelectedText = "";
+            this.LastNameTXT.ShadowDecoration.BorderRadius = 5;
+            this.LastNameTXT.ShadowDecoration.Depth = 10;
+            this.LastNameTXT.Size = new System.Drawing.Size(314, 50);
+            this.LastNameTXT.TabIndex = 183;
             // 
             // guna2Separator8
             // 
@@ -4163,40 +4009,6 @@
             this.guna2HtmlLabel104.TabIndex = 180;
             this.guna2HtmlLabel104.Text = "Date of Birth:";
             // 
-            // guna2HtmlLabel105
-            // 
-            this.guna2HtmlLabel105.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel105.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel105.Location = new System.Drawing.Point(37, 484);
-            this.guna2HtmlLabel105.Name = "guna2HtmlLabel105";
-            this.guna2HtmlLabel105.Size = new System.Drawing.Size(100, 26);
-            this.guna2HtmlLabel105.TabIndex = 179;
-            this.guna2HtmlLabel105.Text = "Street No.:";
-            // 
-            // guna2TextBox22
-            // 
-            this.guna2TextBox22.Animated = true;
-            this.guna2TextBox22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox22.BorderRadius = 2;
-            this.guna2TextBox22.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox22.DefaultText = "";
-            this.guna2TextBox22.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox22.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox22.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox22.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox22.Enabled = false;
-            this.guna2TextBox22.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox22.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox22.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox22.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox22.Location = new System.Drawing.Point(37, 515);
-            this.guna2TextBox22.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox22.Name = "guna2TextBox22";
-            this.guna2TextBox22.PlaceholderText = "";
-            this.guna2TextBox22.SelectedText = "";
-            this.guna2TextBox22.Size = new System.Drawing.Size(134, 50);
-            this.guna2TextBox22.TabIndex = 178;
-            // 
             // guna2HtmlLabel106
             // 
             this.guna2HtmlLabel106.BackColor = System.Drawing.Color.Transparent;
@@ -4207,30 +4019,30 @@
             this.guna2HtmlLabel106.TabIndex = 177;
             this.guna2HtmlLabel106.Text = "Telephone/Cell Number:";
             // 
-            // guna2TextBox23
+            // CellNoTXT
             // 
-            this.guna2TextBox23.Animated = true;
-            this.guna2TextBox23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox23.BorderRadius = 2;
-            this.guna2TextBox23.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox23.DefaultText = "";
-            this.guna2TextBox23.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox23.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox23.Enabled = false;
-            this.guna2TextBox23.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox23.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox23.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox23.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox23.Location = new System.Drawing.Point(37, 629);
-            this.guna2TextBox23.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox23.MaxLength = 11;
-            this.guna2TextBox23.Name = "guna2TextBox23";
-            this.guna2TextBox23.PlaceholderText = "";
-            this.guna2TextBox23.SelectedText = "";
-            this.guna2TextBox23.Size = new System.Drawing.Size(352, 50);
-            this.guna2TextBox23.TabIndex = 176;
+            this.CellNoTXT.Animated = true;
+            this.CellNoTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.CellNoTXT.BorderRadius = 2;
+            this.CellNoTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CellNoTXT.DefaultText = "";
+            this.CellNoTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CellNoTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CellNoTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CellNoTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CellNoTXT.Enabled = false;
+            this.CellNoTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CellNoTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.CellNoTXT.ForeColor = System.Drawing.Color.Black;
+            this.CellNoTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CellNoTXT.Location = new System.Drawing.Point(37, 629);
+            this.CellNoTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CellNoTXT.MaxLength = 11;
+            this.CellNoTXT.Name = "CellNoTXT";
+            this.CellNoTXT.PlaceholderText = "";
+            this.CellNoTXT.SelectedText = "";
+            this.CellNoTXT.Size = new System.Drawing.Size(352, 50);
+            this.CellNoTXT.TabIndex = 176;
             // 
             // guna2HtmlLabel107
             // 
@@ -4252,29 +4064,29 @@
             this.guna2HtmlLabel108.TabIndex = 174;
             this.guna2HtmlLabel108.Text = "Middle Name:";
             // 
-            // guna2TextBox24
+            // MiddleNameTXT
             // 
-            this.guna2TextBox24.Animated = true;
-            this.guna2TextBox24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox24.BorderRadius = 2;
-            this.guna2TextBox24.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox24.DefaultText = "";
-            this.guna2TextBox24.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox24.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox24.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox24.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox24.Enabled = false;
-            this.guna2TextBox24.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox24.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox24.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox24.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox24.Location = new System.Drawing.Point(812, 359);
-            this.guna2TextBox24.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox24.Name = "guna2TextBox24";
-            this.guna2TextBox24.PlaceholderText = "";
-            this.guna2TextBox24.SelectedText = "";
-            this.guna2TextBox24.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox24.TabIndex = 173;
+            this.MiddleNameTXT.Animated = true;
+            this.MiddleNameTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.MiddleNameTXT.BorderRadius = 2;
+            this.MiddleNameTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MiddleNameTXT.DefaultText = "";
+            this.MiddleNameTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MiddleNameTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MiddleNameTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MiddleNameTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MiddleNameTXT.Enabled = false;
+            this.MiddleNameTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MiddleNameTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.MiddleNameTXT.ForeColor = System.Drawing.Color.Black;
+            this.MiddleNameTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MiddleNameTXT.Location = new System.Drawing.Point(812, 359);
+            this.MiddleNameTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MiddleNameTXT.Name = "MiddleNameTXT";
+            this.MiddleNameTXT.PlaceholderText = "";
+            this.MiddleNameTXT.SelectedText = "";
+            this.MiddleNameTXT.Size = new System.Drawing.Size(314, 50);
+            this.MiddleNameTXT.TabIndex = 173;
             // 
             // guna2HtmlLabel109
             // 
@@ -4286,31 +4098,31 @@
             this.guna2HtmlLabel109.TabIndex = 172;
             this.guna2HtmlLabel109.Text = "First Name:";
             // 
-            // guna2TextBox25
+            // FirstNameTXT
             // 
-            this.guna2TextBox25.Animated = true;
-            this.guna2TextBox25.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox25.BorderRadius = 2;
-            this.guna2TextBox25.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox25.DefaultText = "";
-            this.guna2TextBox25.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox25.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox25.Enabled = false;
-            this.guna2TextBox25.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox25.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox25.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox25.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox25.Location = new System.Drawing.Point(361, 359);
-            this.guna2TextBox25.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox25.Name = "guna2TextBox25";
-            this.guna2TextBox25.PlaceholderText = "";
-            this.guna2TextBox25.SelectedText = "";
-            this.guna2TextBox25.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox25.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox25.TabIndex = 171;
+            this.FirstNameTXT.Animated = true;
+            this.FirstNameTXT.BackColor = System.Drawing.Color.Transparent;
+            this.FirstNameTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.FirstNameTXT.BorderRadius = 2;
+            this.FirstNameTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FirstNameTXT.DefaultText = "";
+            this.FirstNameTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FirstNameTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FirstNameTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FirstNameTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FirstNameTXT.Enabled = false;
+            this.FirstNameTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FirstNameTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.FirstNameTXT.ForeColor = System.Drawing.Color.Black;
+            this.FirstNameTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FirstNameTXT.Location = new System.Drawing.Point(361, 359);
+            this.FirstNameTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FirstNameTXT.Name = "FirstNameTXT";
+            this.FirstNameTXT.PlaceholderText = "";
+            this.FirstNameTXT.SelectedText = "";
+            this.FirstNameTXT.ShadowDecoration.BorderRadius = 5;
+            this.FirstNameTXT.Size = new System.Drawing.Size(314, 50);
+            this.FirstNameTXT.TabIndex = 171;
             // 
             // guna2HtmlLabel110
             // 
@@ -4322,46 +4134,46 @@
             this.guna2HtmlLabel110.TabIndex = 170;
             this.guna2HtmlLabel110.Text = "Last Name:";
             // 
-            // guna2TextBox26
+            // StudentNoTXT
             // 
-            this.guna2TextBox26.Animated = true;
-            this.guna2TextBox26.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox26.BorderRadius = 2;
-            this.guna2TextBox26.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox26.DefaultText = "";
-            this.guna2TextBox26.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox26.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox26.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox26.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox26.Enabled = false;
-            this.guna2TextBox26.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox26.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox26.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox26.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox26.Location = new System.Drawing.Point(37, 138);
-            this.guna2TextBox26.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox26.MaxLength = 7;
-            this.guna2TextBox26.Name = "guna2TextBox26";
-            this.guna2TextBox26.PlaceholderText = "";
-            this.guna2TextBox26.SelectedText = "";
-            this.guna2TextBox26.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox26.ShadowDecoration.Depth = 10;
-            this.guna2TextBox26.Size = new System.Drawing.Size(219, 50);
-            this.guna2TextBox26.TabIndex = 169;
+            this.StudentNoTXT.Animated = true;
+            this.StudentNoTXT.BackColor = System.Drawing.Color.Transparent;
+            this.StudentNoTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.StudentNoTXT.BorderRadius = 2;
+            this.StudentNoTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentNoTXT.DefaultText = "";
+            this.StudentNoTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.StudentNoTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.StudentNoTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.StudentNoTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.StudentNoTXT.Enabled = false;
+            this.StudentNoTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StudentNoTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.StudentNoTXT.ForeColor = System.Drawing.Color.Black;
+            this.StudentNoTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StudentNoTXT.Location = new System.Drawing.Point(37, 138);
+            this.StudentNoTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.StudentNoTXT.MaxLength = 7;
+            this.StudentNoTXT.Name = "StudentNoTXT";
+            this.StudentNoTXT.PlaceholderText = "";
+            this.StudentNoTXT.SelectedText = "";
+            this.StudentNoTXT.ShadowDecoration.BorderRadius = 5;
+            this.StudentNoTXT.ShadowDecoration.Depth = 10;
+            this.StudentNoTXT.Size = new System.Drawing.Size(219, 50);
+            this.StudentNoTXT.TabIndex = 169;
             // 
-            // guna2PictureBox3
+            // picturePB
             // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.BorderRadius = 5;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(1180, 95);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(314, 314);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 182;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
+            this.picturePB.BackColor = System.Drawing.Color.Transparent;
+            this.picturePB.BorderRadius = 5;
+            this.picturePB.ImageRotate = 0F;
+            this.picturePB.Location = new System.Drawing.Point(1180, 95);
+            this.picturePB.Name = "picturePB";
+            this.picturePB.Size = new System.Drawing.Size(314, 314);
+            this.picturePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePB.TabIndex = 182;
+            this.picturePB.TabStop = false;
+            this.picturePB.UseTransparentBackground = true;
             // 
             // ListofCadets3
             // 
@@ -4369,18 +4181,18 @@
             this.ListofCadets3.Controls.Add(this.guna2Separator9);
             this.ListofCadets3.Controls.Add(this.guna2Separator10);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel57);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox3);
+            this.ListofCadets3.Controls.Add(this.TelephoneTXT);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel58);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox38);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox39);
+            this.ListofCadets3.Controls.Add(this.RelationTXT);
+            this.ListofCadets3.Controls.Add(this.PersonTXT);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel111);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox40);
+            this.ListofCadets3.Controls.Add(this.MotherOccTXT);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel112);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox41);
+            this.ListofCadets3.Controls.Add(this.MotherNameTXT);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel113);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox42);
+            this.ListofCadets3.Controls.Add(this.FatherOccTXT);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel114);
-            this.ListofCadets3.Controls.Add(this.guna2TextBox43);
+            this.ListofCadets3.Controls.Add(this.FatherNameTXT);
             this.ListofCadets3.Controls.Add(this.guna2HtmlLabel115);
             this.ListofCadets3.Controls.Add(this.PreviousPageViewBTN);
             this.ListofCadets3.Location = new System.Drawing.Point(4, 4);
@@ -4414,30 +4226,30 @@
             this.guna2HtmlLabel57.TabIndex = 201;
             this.guna2HtmlLabel57.Text = "Telephone/Cell Number:";
             // 
-            // guna2TextBox3
+            // TelephoneTXT
             // 
-            this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox3.BorderRadius = 2;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.Enabled = false;
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(1180, 442);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox3.MaxLength = 11;
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox3.TabIndex = 200;
+            this.TelephoneTXT.Animated = true;
+            this.TelephoneTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.TelephoneTXT.BorderRadius = 2;
+            this.TelephoneTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TelephoneTXT.DefaultText = "";
+            this.TelephoneTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TelephoneTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TelephoneTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TelephoneTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TelephoneTXT.Enabled = false;
+            this.TelephoneTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TelephoneTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.TelephoneTXT.ForeColor = System.Drawing.Color.Black;
+            this.TelephoneTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TelephoneTXT.Location = new System.Drawing.Point(1180, 442);
+            this.TelephoneTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TelephoneTXT.MaxLength = 11;
+            this.TelephoneTXT.Name = "TelephoneTXT";
+            this.TelephoneTXT.PlaceholderText = "";
+            this.TelephoneTXT.SelectedText = "";
+            this.TelephoneTXT.Size = new System.Drawing.Size(314, 50);
+            this.TelephoneTXT.TabIndex = 200;
             // 
             // guna2HtmlLabel58
             // 
@@ -4449,56 +4261,56 @@
             this.guna2HtmlLabel58.TabIndex = 199;
             this.guna2HtmlLabel58.Text = "Relationship:";
             // 
-            // guna2TextBox38
+            // RelationTXT
             // 
-            this.guna2TextBox38.Animated = true;
-            this.guna2TextBox38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox38.BorderRadius = 2;
-            this.guna2TextBox38.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox38.DefaultText = "";
-            this.guna2TextBox38.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox38.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox38.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox38.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox38.Enabled = false;
-            this.guna2TextBox38.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox38.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox38.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox38.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox38.Location = new System.Drawing.Point(727, 442);
-            this.guna2TextBox38.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox38.Name = "guna2TextBox38";
-            this.guna2TextBox38.PlaceholderText = "";
-            this.guna2TextBox38.SelectedText = "";
-            this.guna2TextBox38.Size = new System.Drawing.Size(315, 50);
-            this.guna2TextBox38.TabIndex = 198;
+            this.RelationTXT.Animated = true;
+            this.RelationTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.RelationTXT.BorderRadius = 2;
+            this.RelationTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RelationTXT.DefaultText = "";
+            this.RelationTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.RelationTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.RelationTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.RelationTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.RelationTXT.Enabled = false;
+            this.RelationTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RelationTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.RelationTXT.ForeColor = System.Drawing.Color.Black;
+            this.RelationTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RelationTXT.Location = new System.Drawing.Point(727, 442);
+            this.RelationTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.RelationTXT.Name = "RelationTXT";
+            this.RelationTXT.PlaceholderText = "";
+            this.RelationTXT.SelectedText = "";
+            this.RelationTXT.Size = new System.Drawing.Size(315, 50);
+            this.RelationTXT.TabIndex = 198;
             // 
-            // guna2TextBox39
+            // PersonTXT
             // 
-            this.guna2TextBox39.Animated = true;
-            this.guna2TextBox39.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox39.BorderRadius = 2;
-            this.guna2TextBox39.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox39.DefaultText = "";
-            this.guna2TextBox39.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox39.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox39.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox39.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox39.Enabled = false;
-            this.guna2TextBox39.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox39.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox39.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox39.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox39.Location = new System.Drawing.Point(37, 442);
-            this.guna2TextBox39.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox39.Name = "guna2TextBox39";
-            this.guna2TextBox39.PlaceholderText = "";
-            this.guna2TextBox39.SelectedText = "";
-            this.guna2TextBox39.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox39.ShadowDecoration.Depth = 10;
-            this.guna2TextBox39.Size = new System.Drawing.Size(556, 50);
-            this.guna2TextBox39.TabIndex = 197;
+            this.PersonTXT.Animated = true;
+            this.PersonTXT.BackColor = System.Drawing.Color.Transparent;
+            this.PersonTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.PersonTXT.BorderRadius = 2;
+            this.PersonTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PersonTXT.DefaultText = "";
+            this.PersonTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PersonTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PersonTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PersonTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PersonTXT.Enabled = false;
+            this.PersonTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PersonTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.PersonTXT.ForeColor = System.Drawing.Color.Black;
+            this.PersonTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PersonTXT.Location = new System.Drawing.Point(37, 442);
+            this.PersonTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PersonTXT.Name = "PersonTXT";
+            this.PersonTXT.PlaceholderText = "";
+            this.PersonTXT.SelectedText = "";
+            this.PersonTXT.ShadowDecoration.BorderRadius = 5;
+            this.PersonTXT.ShadowDecoration.Depth = 10;
+            this.PersonTXT.Size = new System.Drawing.Size(556, 50);
+            this.PersonTXT.TabIndex = 197;
             // 
             // guna2HtmlLabel111
             // 
@@ -4510,32 +4322,32 @@
             this.guna2HtmlLabel111.TabIndex = 196;
             this.guna2HtmlLabel111.Text = "Person to be notified in case of emergency:";
             // 
-            // guna2TextBox40
+            // MotherOccTXT
             // 
-            this.guna2TextBox40.Animated = true;
-            this.guna2TextBox40.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox40.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox40.BorderRadius = 2;
-            this.guna2TextBox40.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox40.DefaultText = "";
-            this.guna2TextBox40.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox40.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox40.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox40.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox40.Enabled = false;
-            this.guna2TextBox40.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox40.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox40.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox40.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox40.Location = new System.Drawing.Point(1262, 274);
-            this.guna2TextBox40.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox40.Name = "guna2TextBox40";
-            this.guna2TextBox40.PlaceholderText = "";
-            this.guna2TextBox40.SelectedText = "";
-            this.guna2TextBox40.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox40.ShadowDecoration.Depth = 10;
-            this.guna2TextBox40.Size = new System.Drawing.Size(232, 50);
-            this.guna2TextBox40.TabIndex = 195;
+            this.MotherOccTXT.Animated = true;
+            this.MotherOccTXT.BackColor = System.Drawing.Color.Transparent;
+            this.MotherOccTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.MotherOccTXT.BorderRadius = 2;
+            this.MotherOccTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MotherOccTXT.DefaultText = "";
+            this.MotherOccTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MotherOccTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MotherOccTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MotherOccTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MotherOccTXT.Enabled = false;
+            this.MotherOccTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MotherOccTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.MotherOccTXT.ForeColor = System.Drawing.Color.Black;
+            this.MotherOccTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MotherOccTXT.Location = new System.Drawing.Point(1262, 274);
+            this.MotherOccTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MotherOccTXT.Name = "MotherOccTXT";
+            this.MotherOccTXT.PlaceholderText = "";
+            this.MotherOccTXT.SelectedText = "";
+            this.MotherOccTXT.ShadowDecoration.BorderRadius = 5;
+            this.MotherOccTXT.ShadowDecoration.Depth = 10;
+            this.MotherOccTXT.Size = new System.Drawing.Size(232, 50);
+            this.MotherOccTXT.TabIndex = 195;
             // 
             // guna2HtmlLabel112
             // 
@@ -4547,32 +4359,32 @@
             this.guna2HtmlLabel112.TabIndex = 194;
             this.guna2HtmlLabel112.Text = "Mother\'s Occupation:";
             // 
-            // guna2TextBox41
+            // MotherNameTXT
             // 
-            this.guna2TextBox41.Animated = true;
-            this.guna2TextBox41.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox41.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox41.BorderRadius = 2;
-            this.guna2TextBox41.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox41.DefaultText = "";
-            this.guna2TextBox41.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox41.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox41.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox41.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox41.Enabled = false;
-            this.guna2TextBox41.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox41.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox41.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox41.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox41.Location = new System.Drawing.Point(938, 274);
-            this.guna2TextBox41.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox41.Name = "guna2TextBox41";
-            this.guna2TextBox41.PlaceholderText = "";
-            this.guna2TextBox41.SelectedText = "";
-            this.guna2TextBox41.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox41.ShadowDecoration.Depth = 10;
-            this.guna2TextBox41.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox41.TabIndex = 193;
+            this.MotherNameTXT.Animated = true;
+            this.MotherNameTXT.BackColor = System.Drawing.Color.Transparent;
+            this.MotherNameTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.MotherNameTXT.BorderRadius = 2;
+            this.MotherNameTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MotherNameTXT.DefaultText = "";
+            this.MotherNameTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MotherNameTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MotherNameTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MotherNameTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MotherNameTXT.Enabled = false;
+            this.MotherNameTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MotherNameTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.MotherNameTXT.ForeColor = System.Drawing.Color.Black;
+            this.MotherNameTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MotherNameTXT.Location = new System.Drawing.Point(938, 274);
+            this.MotherNameTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MotherNameTXT.Name = "MotherNameTXT";
+            this.MotherNameTXT.PlaceholderText = "";
+            this.MotherNameTXT.SelectedText = "";
+            this.MotherNameTXT.ShadowDecoration.BorderRadius = 5;
+            this.MotherNameTXT.ShadowDecoration.Depth = 10;
+            this.MotherNameTXT.Size = new System.Drawing.Size(314, 50);
+            this.MotherNameTXT.TabIndex = 193;
             // 
             // guna2HtmlLabel113
             // 
@@ -4584,32 +4396,32 @@
             this.guna2HtmlLabel113.TabIndex = 192;
             this.guna2HtmlLabel113.Text = "Mother\'s Name:";
             // 
-            // guna2TextBox42
+            // FatherOccTXT
             // 
-            this.guna2TextBox42.Animated = true;
-            this.guna2TextBox42.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox42.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox42.BorderRadius = 2;
-            this.guna2TextBox42.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox42.DefaultText = "";
-            this.guna2TextBox42.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox42.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox42.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox42.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox42.Enabled = false;
-            this.guna2TextBox42.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox42.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox42.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox42.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox42.Location = new System.Drawing.Point(361, 274);
-            this.guna2TextBox42.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox42.Name = "guna2TextBox42";
-            this.guna2TextBox42.PlaceholderText = "";
-            this.guna2TextBox42.SelectedText = "";
-            this.guna2TextBox42.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox42.ShadowDecoration.Depth = 10;
-            this.guna2TextBox42.Size = new System.Drawing.Size(232, 50);
-            this.guna2TextBox42.TabIndex = 191;
+            this.FatherOccTXT.Animated = true;
+            this.FatherOccTXT.BackColor = System.Drawing.Color.Transparent;
+            this.FatherOccTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.FatherOccTXT.BorderRadius = 2;
+            this.FatherOccTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FatherOccTXT.DefaultText = "";
+            this.FatherOccTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FatherOccTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FatherOccTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FatherOccTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FatherOccTXT.Enabled = false;
+            this.FatherOccTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FatherOccTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.FatherOccTXT.ForeColor = System.Drawing.Color.Black;
+            this.FatherOccTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FatherOccTXT.Location = new System.Drawing.Point(361, 274);
+            this.FatherOccTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FatherOccTXT.Name = "FatherOccTXT";
+            this.FatherOccTXT.PlaceholderText = "";
+            this.FatherOccTXT.SelectedText = "";
+            this.FatherOccTXT.ShadowDecoration.BorderRadius = 5;
+            this.FatherOccTXT.ShadowDecoration.Depth = 10;
+            this.FatherOccTXT.Size = new System.Drawing.Size(232, 50);
+            this.FatherOccTXT.TabIndex = 191;
             // 
             // guna2HtmlLabel114
             // 
@@ -4621,32 +4433,32 @@
             this.guna2HtmlLabel114.TabIndex = 190;
             this.guna2HtmlLabel114.Text = "Father\'s Occupation:";
             // 
-            // guna2TextBox43
+            // FatherNameTXT
             // 
-            this.guna2TextBox43.Animated = true;
-            this.guna2TextBox43.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
-            this.guna2TextBox43.BorderRadius = 2;
-            this.guna2TextBox43.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox43.DefaultText = "";
-            this.guna2TextBox43.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox43.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox43.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox43.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox43.Enabled = false;
-            this.guna2TextBox43.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox43.Font = new System.Drawing.Font("Bahnschrift", 16F);
-            this.guna2TextBox43.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox43.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox43.Location = new System.Drawing.Point(37, 274);
-            this.guna2TextBox43.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.guna2TextBox43.Name = "guna2TextBox43";
-            this.guna2TextBox43.PlaceholderText = "";
-            this.guna2TextBox43.SelectedText = "";
-            this.guna2TextBox43.ShadowDecoration.BorderRadius = 5;
-            this.guna2TextBox43.ShadowDecoration.Depth = 10;
-            this.guna2TextBox43.Size = new System.Drawing.Size(314, 50);
-            this.guna2TextBox43.TabIndex = 189;
+            this.FatherNameTXT.Animated = true;
+            this.FatherNameTXT.BackColor = System.Drawing.Color.Transparent;
+            this.FatherNameTXT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(207)))));
+            this.FatherNameTXT.BorderRadius = 2;
+            this.FatherNameTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FatherNameTXT.DefaultText = "";
+            this.FatherNameTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FatherNameTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FatherNameTXT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FatherNameTXT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FatherNameTXT.Enabled = false;
+            this.FatherNameTXT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FatherNameTXT.Font = new System.Drawing.Font("Bahnschrift", 16F);
+            this.FatherNameTXT.ForeColor = System.Drawing.Color.Black;
+            this.FatherNameTXT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FatherNameTXT.Location = new System.Drawing.Point(37, 274);
+            this.FatherNameTXT.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FatherNameTXT.Name = "FatherNameTXT";
+            this.FatherNameTXT.PlaceholderText = "";
+            this.FatherNameTXT.SelectedText = "";
+            this.FatherNameTXT.ShadowDecoration.BorderRadius = 5;
+            this.FatherNameTXT.ShadowDecoration.Depth = 10;
+            this.FatherNameTXT.Size = new System.Drawing.Size(314, 50);
+            this.FatherNameTXT.TabIndex = 189;
             // 
             // guna2HtmlLabel115
             // 
@@ -5762,10 +5574,10 @@
             this.guna2GroupBox2.PerformLayout();
             this.ListofCadets.ResumeLayout(false);
             this.ListofCadets.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CadetListDGV)).EndInit();
             this.ListofCadets2.ResumeLayout(false);
             this.ListofCadets2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePB)).EndInit();
             this.ListofCadets3.ResumeLayout(false);
             this.ListofCadets3.PerformLayout();
             this.Certificate.ResumeLayout(false);
@@ -5863,8 +5675,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel31;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel33;
         private System.Windows.Forms.TabPage ListofCadets;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2TextBox SearchTXT;
+        private Guna.UI2.WinForms.Guna2ComboBox SearchCB;
         private Guna.UI2.WinForms.Guna2ComboBox Suffix;
         private Guna.UI2.WinForms.Guna2ComboBox Province;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
@@ -5897,7 +5709,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel51;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel54;
         private Guna.UI2.WinForms.Guna2TextBox PlaceofBirth;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView CadetListDGV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private Guna.UI2.WinForms.Guna2TextBox Age;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
@@ -5912,10 +5724,6 @@
         private Guna.UI2.WinForms.Guna2TextBox Day;
         private Guna.UI2.WinForms.Guna2TextBox SchoolYear2;
         private Guna.UI2.WinForms.Guna2HtmlLabel User;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmailAddressList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNo;
         private System.Windows.Forms.TabPage CreateAccount;
         private System.Windows.Forms.TabPage HomePage;
         private System.Windows.Forms.TabPage ProfReg;
@@ -5963,86 +5771,78 @@
         private Guna.UI2.WinForms.Guna2Button SearchBTN;
         private System.Windows.Forms.TabPage ListofCadets2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel56;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox CertificateTypeCB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel55;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button GiveCertificateBTN;
         private Guna.UI2.WinForms.Guna2Button ViewCadetDetailsBTN;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox37;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox36;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox35;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox34;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox33;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox32;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox31;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox30;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox29;
+        private Guna.UI2.WinForms.Guna2TextBox AddressTXT;
+        private Guna.UI2.WinForms.Guna2TextBox GenderTXT;
+        private Guna.UI2.WinForms.Guna2TextBox BloodTypeTXT;
+        private Guna.UI2.WinForms.Guna2TextBox SuffixTXT;
+        private Guna.UI2.WinForms.Guna2TextBox SectionTXT;
+        private Guna.UI2.WinForms.Guna2TextBox CourseTXT;
+        private Guna.UI2.WinForms.Guna2TextBox CollegeDepartmentTXT;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox28;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox27;
+        private Guna.UI2.WinForms.Guna2TextBox YearTXT;
         private Guna.UI2.WinForms.Guna2Button NextPageViewBTN;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel59;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel60;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel61;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox AgeTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel62;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox14;
+        private Guna.UI2.WinForms.Guna2TextBox BirthplaceTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel63;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel64;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel65;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox15;
+        private Guna.UI2.WinForms.Guna2DateTimePicker BirthdateTXT;
+        private Guna.UI2.WinForms.Guna2TextBox ReligionTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel66;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox16;
+        private Guna.UI2.WinForms.Guna2TextBox ComplexionTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel67;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox17;
+        private Guna.UI2.WinForms.Guna2TextBox WeightTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel68;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox18;
+        private Guna.UI2.WinForms.Guna2TextBox HeightTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel69;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel70;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel71;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel72;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox19;
+        private Guna.UI2.WinForms.Guna2TextBox FacebookTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel73;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox20;
+        private Guna.UI2.WinForms.Guna2TextBox EmailTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel74;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel75;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel76;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel77;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker EnlistmentDateTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel78;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel79;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox21;
+        private Guna.UI2.WinForms.Guna2TextBox LastNameTXT;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel104;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel105;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox22;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel106;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox23;
+        private Guna.UI2.WinForms.Guna2TextBox CellNoTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel107;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel108;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox24;
+        private Guna.UI2.WinForms.Guna2TextBox MiddleNameTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel109;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox25;
+        private Guna.UI2.WinForms.Guna2TextBox FirstNameTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel110;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox26;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2TextBox StudentNoTXT;
+        private Guna.UI2.WinForms.Guna2PictureBox picturePB;
         private System.Windows.Forms.TabPage ListofCadets3;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator9;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel57;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox TelephoneTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel58;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox38;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox39;
+        private Guna.UI2.WinForms.Guna2TextBox RelationTXT;
+        private Guna.UI2.WinForms.Guna2TextBox PersonTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel111;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox40;
+        private Guna.UI2.WinForms.Guna2TextBox MotherOccTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel112;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox41;
+        private Guna.UI2.WinForms.Guna2TextBox MotherNameTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel113;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox42;
+        private Guna.UI2.WinForms.Guna2TextBox FatherOccTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel114;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox43;
+        private Guna.UI2.WinForms.Guna2TextBox FatherNameTXT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel115;
         private Guna.UI2.WinForms.Guna2Button PreviousPageViewBTN;
         private Guna.UI2.WinForms.Guna2Button BackViewListBTN;
