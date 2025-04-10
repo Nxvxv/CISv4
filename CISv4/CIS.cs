@@ -1177,92 +1177,265 @@ namespace CISv4
         private void SearchCadets()
         {
             string searchTerm = SearchTXT.Text.Trim().ToLower();
-            string filter = string.Empty;
             string selectedCriteria = SearchCB.SelectedItem?.ToString();
 
             if (string.IsNullOrEmpty(selectedCriteria))
             {
                 if (string.IsNullOrEmpty(searchTerm))
                 {
-                    LoadCadets(); 
+                    LoadCadets();
                 }
                 else
                 {
-                    (CadetListDGV.DataSource as DataTable).DefaultView.RowFilter = string.Format(
-                        "Convert([Student No], 'System.String') LIKE '%{0}%' OR [Full Name] LIKE '%{0}%'",
-                        searchTerm);
+                    (CadetListDGV.DataSource as DataTable).DefaultView.RowFilter =
+                        $"Convert([Student No], 'System.String') LIKE '%{searchTerm}%' OR [Full Name] LIKE '%{searchTerm}%'";
                 }
+                return;
+            }
+
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                LoadCadets();
                 return;
             }
 
             switch (selectedCriteria)
             {
                 case "Name":
-                    filter = $"[Full Name] LIKE '%{searchTerm}%'";
+                    ApplyFilter($"[Full Name] LIKE '%{searchTerm}%'");
                     break;
                 case "Student No":
-                    filter = $"Convert([Student No], 'System.String') LIKE '%{searchTerm}%'";
+                    ApplyFilter($"Convert([Student No], 'System.String') LIKE '%{searchTerm}%'");
                     break;
                 case "Section":
-                    string query = "SELECT ci.cadet_id AS `Student No`, " +
-                                   "TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', " +
-                                   " IFNULL(ci.first_name, ''), ' ', " +
-                                   "IFNULL(ci.middle_name, ''), ' ', " +
-                                   "IFNULL(ci.suffix, ''))) AS `Full Name`, " +
-                                   "ci.email AS `Email Address`, " +
-                                   "ci.contact_number AS `Contact No`, " +
-                                   "s.campus " + 
-                                   "FROM cadet_info ci " +
-                                   "JOIN section s ON ci.section_id = s.section_id " +
-                                   "WHERE s.campus LIKE '%" + searchTerm + "%'";
-                    try
+                    ExecuteSearchQuery("s.campus", "campus", searchTerm, joinSection: true);
+                    break;
+                case "Academic Year":
+                    ExecuteSearchQuery("s.school_year", "school_year", searchTerm, joinSection: true);
+                    break;
+                case "Rank":
+                    ExecuteSearchQuery("ci.rank", "rank", searchTerm);
+                    break;
+                case "Platoon":
+                    ExecutePlatoonSearch(searchTerm);
+                    break;
+                case "Battalion":
+                    ExecuteBattalionSearch(searchTerm);
+                    break;
+                default:
+                    ApplyFilter($"Convert([Student No], 'System.String') LIKE '%{searchTerm}%' OR [Full Name] LIKE '%{searchTerm}%'");
+                    break;
+            }
+        }
+
+        private void ExecutePlatoonSearch(string searchTerm)
+        {
+            //OR CAST(p.plat_id AS CHAR) LIKE @searchTerm
+            string formattedSearchTerm = "%" + searchTerm + "%";
+            string query = @"
+                        SELECT 
+                            ci.cadet_id AS `Student No`, 
+                            TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', 
+                                        IFNULL(ci.first_name, ''), ' ', 
+                                        IFNULL(ci.middle_name, ''), ' ', 
+                                        IFNULL(ci.suffix, ''))) AS `Full Name`, 
+                            ci.email AS `Email Address`, 
+                            ci.contact_number AS `Contact No`, 
+                            p.plat_name
+                        FROM 
+                            plat_info p
+                        JOIN 
+                            cadet_group cg ON p.plat_id = cg.plat_id
+                        RIGHT JOIN 
+                            cadet_info ci ON cg.cadet_id = ci.cadet_id
+                        WHERE 
+                            p.plat_name LIKE @searchTerm 
+
+                        UNION
+
+                        SELECT 
+                            ci.cadet_id AS `Student No`, 
+                            TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', 
+                                        IFNULL(ci.first_name, ''), ' ', 
+                                        IFNULL(ci.middle_name, ''), ' ', 
+                                        IFNULL(ci.suffix, ''))) AS `Full Name`, 
+                            ci.email AS `Email Address`, 
+                            ci.contact_number AS `Contact No`, 
+                            p.plat_name
+                        FROM 
+                            plat_info p
+                        RIGHT JOIN 
+                            cadet_info ci ON ci.cadet_id = p.leader_id
+                        WHERE 
+                            p.plat_name LIKE @searchTerm;
+                    ";
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        using (MySqlConnection conn = Database.GetConnection())
+                        cmd.Parameters.AddWithValue("@searchTerm", formattedSearchTerm);
+                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        CadetListDGV.DataSource = dataTable;
+
+                        if (CadetListDGV.Columns.Contains("plat_name") && CadetListDGV.Columns.Contains("leader_id"))
                         {
-                            conn.Open();
-                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                            CadetListDGV.Columns["plat_name"].Visible = false;
+                            CadetListDGV.Columns["leader_id"].Visible = false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ExecuteBattalionSearch(string searchTerm)
+        {
+            string formattedSearchTerm = "%" + searchTerm + "%";
+            string query = @"
+                    SELECT 
+                        ci.cadet_id AS `Student No`, 
+                        TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', 
+                                    IFNULL(ci.first_name, ''), ' ', 
+                                    IFNULL(ci.middle_name, ''), ' ', 
+                                    IFNULL(ci.suffix, ''))) AS `Full Name`, 
+                        ci.email AS `Email Address`, 
+                        ci.contact_number AS `Contact No`, 
+                        b.xo_id,
+                        b.comma_id,
+                        b.per_id,
+                        b.int_id,
+                        b.tra_id,
+                        b.logi_id,
+                        b.commu_id,
+                        b.civ_id,
+                        b.bat_name
+                    FROM 
+                        bat_info b
+                    RIGHT JOIN 
+                        cadet_info ci ON ci.cadet_id IN (b.xo_id, b.comma_id, b.per_id, b.int_id, b.tra_id, b.logi_id, b.commu_id, b.civ_id)
+                    WHERE 
+                        b.bat_name LIKE @searchTerm
+
+                    UNION ALL
+
+                    SELECT 
+                        ci.cadet_id AS `Student No`, 
+                        TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', 
+                                    IFNULL(ci.first_name, ''), ' ', 
+                                    IFNULL(ci.middle_name, ''), ' ', 
+                                    IFNULL(ci.suffix, ''))) AS `Full Name`, 
+                        ci.email AS `Email Address`, 
+                        ci.contact_number AS `Contact No`, 
+                        NULL AS `xo_id`, 
+                        NULL AS `comma_id`, 
+                        NULL AS `per_id`, 
+                        NULL AS `int_id`, 
+                        NULL AS `tra_id`, 
+                        NULL AS `logi_id`, 
+                        NULL AS `commu_id`, 
+                        NULL AS `civ_id`, 
+                        b.bat_name
+                    FROM 
+                        bat_info b
+                    JOIN 
+                        comp_info c ON b.bat_id = c.bat_id
+                    JOIN 
+                        plat_info p ON c.comp_id = p.comp_id
+                    JOIN 
+                        cadet_group cg ON p.plat_id = cg.plat_id
+                    RIGHT JOIN 
+                        cadet_info ci ON cg.cadet_id = ci.cadet_id
+                    WHERE 
+                        b.bat_name LIKE @searchTerm;
+                ";
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@searchTerm", formattedSearchTerm);
+                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        CadetListDGV.DataSource = dataTable;
+
+                        string[] columnsToHide = { "xo_id", "comma_id", "per_id", "int_id", "tra_id", "logi_id", "commu_id", "civ_id", "bat_name" };
+                        foreach (var column in columnsToHide)
+                        {
+                            if (CadetListDGV.Columns.Contains(column))
                             {
-                                cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
-                                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
-                                DataTable dataTable = new DataTable();
-                                dataAdapter.Fill(dataTable);
-                                CadetListDGV.DataSource = dataTable;
-                                if (CadetListDGV.Columns.Contains("campus"))
-                                {
-                                    CadetListDGV.Columns["campus"].Visible = false;
-                                }
+                                CadetListDGV.Columns[column].Visible = false;
                             }
                         }
                     }
-                    catch (Exception ex)
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ApplyFilter(string filter)
+        {
+            if (CadetListDGV.DataSource is DataTable dt)
+            {
+                dt.DefaultView.RowFilter = null;
+                dt.DefaultView.RowFilter = filter;
+            }
+        }
+
+        private void ExecuteSearchQuery(string dbColumn, string hiddenColumnToHide, string searchTerm, bool joinSection = false)
+        {
+            string selectFields = "ci.cadet_id AS `Student No`, " +
+                                  "TRIM(CONCAT(IFNULL(ci.last_name, ''), ', ', " +
+                                  "IFNULL(ci.first_name, ''), ' ', " +
+                                  "IFNULL(ci.middle_name, ''), ' ', " +
+                                  "IFNULL(ci.suffix, ''))) AS `Full Name`, " +
+                                  "ci.email AS `Email Address`, " +
+                                  "ci.contact_number AS `Contact No`, " +
+                                  $"{(joinSection ? $"s.{hiddenColumnToHide}" : $"ci.{hiddenColumnToHide}")}";
+
+            string fromClause = joinSection
+                ? "FROM cadet_info ci JOIN section s ON ci.section_id = s.section_id"
+                : "FROM cadet_info ci";
+
+            string query = $"SELECT {selectFields} {fromClause} WHERE {dbColumn} LIKE @searchTerm";
+
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        cmd.Parameters.AddWithValue("@searchTerm", $"%{searchTerm}%");
+
+                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        CadetListDGV.DataSource = dataTable;
+
+                        if (CadetListDGV.Columns.Contains(hiddenColumnToHide))
+                        {
+                            CadetListDGV.Columns[hiddenColumnToHide].Visible = false;
+                        }
                     }
-                    break;
-                case "Academic Year":
-                    filter = $"[Class Year] LIKE '%{searchTerm}%'";
-                    break;
-                case "Rank":
-                    filter = $"[Rank] LIKE '%{searchTerm}%'";
-                    break;
-                case "Platoon":
-                   
-                    break;
-                case "Battalion":
-                    filter = $"[Battalion] LIKE '%{searchTerm}%'";
-                    break;
-                default:
-                    if (string.IsNullOrEmpty(searchTerm))
-                    {
-                        LoadCadets();
-                    }
-                    else
-                    {
-                        (CadetListDGV.DataSource as DataTable).DefaultView.RowFilter = string.Format(
-                            "Convert([Student No], 'System.String') LIKE '%{0}%' OR [Full Name] LIKE '%{0}%'",
-                            searchTerm);
-                    }
-                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading cadet details: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
