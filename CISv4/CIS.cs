@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -476,7 +477,7 @@ namespace CISv4
                 if (Section.SelectedValue != null)
                 {
                     int.TryParse(Section.SelectedValue.ToString(), out sectionId);
-                   
+
                 }
 
                 if (sectionId == 0)
@@ -885,7 +886,7 @@ namespace CISv4
                 e.Handled = true;
             }
         }
-       
+
 
 
         private void LastName_TextChanged(object sender, EventArgs e)
@@ -1067,17 +1068,17 @@ namespace CISv4
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            string input = guna2TextBox2.Text.Replace("-", string.Empty); 
+            string input = guna2TextBox2.Text.Replace("-", string.Empty);
             string formatted = "";
 
             if (input.Length > 0)
             {
-                formatted += input.Substring(0, Math.Min(2, input.Length)); 
+                formatted += input.Substring(0, Math.Min(2, input.Length));
             }
 
             if (input.Length > 2)
             {
-                formatted += "-" + input.Substring(2, Math.Min(2, input.Length - 2)); 
+                formatted += "-" + input.Substring(2, Math.Min(2, input.Length - 2));
             }
 
             if (input.Length > 4)
@@ -1129,7 +1130,7 @@ namespace CISv4
 
         private void NextPageViewBTN_Click(object sender, EventArgs e)
         {
-            ViewSecondaryDetails(); 
+            ViewSecondaryDetails();
         }
 
         private void SearchTXT_TextChanged(object sender, EventArgs e)
@@ -1152,12 +1153,12 @@ namespace CISv4
                 {
                     conn.Open();
                     string query = "SELECT cadet_id AS `Student No`, " +
-                           "TRIM(CONCAT(IFNULL(last_name, ''), ', ', " + 
-                           "IFNULL(first_name, ''), ' ', " + 
-                           "IFNULL(middle_name, ''), ' ', " + 
-                           "IFNULL(suffix, ''))) AS `Full Name`, " + 
-                           "email AS `Email Address`, " + 
-                           "contact_number AS `Contact No` " + 
+                           "TRIM(CONCAT(IFNULL(last_name, ''), ', ', " +
+                           "IFNULL(first_name, ''), ' ', " +
+                           "IFNULL(middle_name, ''), ' ', " +
+                           "IFNULL(suffix, ''))) AS `Full Name`, " +
+                           "email AS `Email Address`, " +
+                           "contact_number AS `Contact No` " +
                            "FROM cadet_info";
 
                     using (MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, conn))
@@ -1557,6 +1558,55 @@ namespace CISv4
         }
 
         //----------------------------------------------------------------------------END OF LIST OF CADETS--------------------------------------------------------------------------------------
+
+
+        //----------------------------------------------------------------------------------ENLISTMENT--------------------------------------------------------------
+        //private void SearchCadet(string searchTerm)
+        //{
+        //    string cadetquery = "SELECT last_name, first_name, middle_name FROM cadet_info WHERE cadet_id LIKE @searchTerm";
+
+        //    if (string.IsNullOrWhiteSpace(searchTerm))
+        //    {
+        //        LastNameEnlist.Clear();
+        //        FirstNameEnlist.Clear();
+        //        MiddleNameEnlist.Clear();
+        //        SuffixEnlist.Clear();
+        //        return;
+        //    }
+
+        //    try
+        //    {
+        //        using (MySqlConnection conn = Database.GetConnection())
+        //        {
+        //            conn.Open();
+        //            using (MySqlCommand command = new MySqlCommand(cadetquery, conn))
+        //            {
+        //                command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
+
+        //                using (MySqlDataReader reader = command.ExecuteReader())
+        //                {
+        //                    if (reader.Read())
+        //                    {
+        //                        string fullName = $"{reader["last_name"]}, {reader["first_name"]} {reader["middle_name"]}";
+        //                        CadetDisplayNameEnlist.Text = fullName;
+        //                    }
+        //                    else
+        //                    {
+        //                        CadetDisplayNameEnlist.Text = "Student not found.";
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("An error occurred: " + ex.Message);
+        //    }
+            //finally
+            //{
+            //    conn.Close();
+            //}
+        }
     }
 
 }
