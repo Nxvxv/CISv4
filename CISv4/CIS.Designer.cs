@@ -281,9 +281,9 @@
             this.Enlistment = new System.Windows.Forms.TabPage();
             this.YearEnlist = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Separator12 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2HtmlLabel86 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel88 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel89 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.StudSecEnlist = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.StudNumEnlist = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.FullNameStudEnlist = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuffixEnlist = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Separator11 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
@@ -4767,9 +4767,9 @@
             this.Enlistment.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Enlistment.Controls.Add(this.YearEnlist);
             this.Enlistment.Controls.Add(this.guna2Separator12);
-            this.Enlistment.Controls.Add(this.guna2HtmlLabel86);
-            this.Enlistment.Controls.Add(this.guna2HtmlLabel88);
-            this.Enlistment.Controls.Add(this.guna2HtmlLabel89);
+            this.Enlistment.Controls.Add(this.StudSecEnlist);
+            this.Enlistment.Controls.Add(this.StudNumEnlist);
+            this.Enlistment.Controls.Add(this.FullNameStudEnlist);
             this.Enlistment.Controls.Add(this.SuffixEnlist);
             this.Enlistment.Controls.Add(this.guna2Separator11);
             this.Enlistment.Controls.Add(this.guna2Panel11);
@@ -4845,38 +4845,38 @@
             this.guna2Separator12.Size = new System.Drawing.Size(1457, 10);
             this.guna2Separator12.TabIndex = 242;
             // 
-            // guna2HtmlLabel86
+            // StudSecEnlist
             // 
-            this.guna2HtmlLabel86.AutoSize = false;
-            this.guna2HtmlLabel86.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel86.Font = new System.Drawing.Font("Bahnschrift", 16F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel86.Location = new System.Drawing.Point(238, 49);
-            this.guna2HtmlLabel86.Name = "guna2HtmlLabel86";
-            this.guna2HtmlLabel86.Size = new System.Drawing.Size(151, 27);
-            this.guna2HtmlLabel86.TabIndex = 241;
-            this.guna2HtmlLabel86.Text = "Student Section";
+            this.StudSecEnlist.AutoSize = false;
+            this.StudSecEnlist.BackColor = System.Drawing.Color.Transparent;
+            this.StudSecEnlist.Font = new System.Drawing.Font("Bahnschrift", 16F, System.Drawing.FontStyle.Bold);
+            this.StudSecEnlist.Location = new System.Drawing.Point(238, 49);
+            this.StudSecEnlist.Name = "StudSecEnlist";
+            this.StudSecEnlist.Size = new System.Drawing.Size(151, 27);
+            this.StudSecEnlist.TabIndex = 241;
+            this.StudSecEnlist.Text = "Student Section";
             // 
-            // guna2HtmlLabel88
+            // StudNumEnlist
             // 
-            this.guna2HtmlLabel88.AutoSize = false;
-            this.guna2HtmlLabel88.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel88.Font = new System.Drawing.Font("Bahnschrift", 16F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel88.Location = new System.Drawing.Point(38, 49);
-            this.guna2HtmlLabel88.Name = "guna2HtmlLabel88";
-            this.guna2HtmlLabel88.Size = new System.Drawing.Size(158, 27);
-            this.guna2HtmlLabel88.TabIndex = 240;
-            this.guna2HtmlLabel88.Text = "Student Number";
+            this.StudNumEnlist.AutoSize = false;
+            this.StudNumEnlist.BackColor = System.Drawing.Color.Transparent;
+            this.StudNumEnlist.Font = new System.Drawing.Font("Bahnschrift", 16F, System.Drawing.FontStyle.Bold);
+            this.StudNumEnlist.Location = new System.Drawing.Point(38, 49);
+            this.StudNumEnlist.Name = "StudNumEnlist";
+            this.StudNumEnlist.Size = new System.Drawing.Size(158, 27);
+            this.StudNumEnlist.TabIndex = 240;
+            this.StudNumEnlist.Text = "Student Number";
             // 
-            // guna2HtmlLabel89
+            // FullNameStudEnlist
             // 
-            this.guna2HtmlLabel89.AutoSize = false;
-            this.guna2HtmlLabel89.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel89.Font = new System.Drawing.Font("Bahnschrift", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel89.Location = new System.Drawing.Point(38, 6);
-            this.guna2HtmlLabel89.Name = "guna2HtmlLabel89";
-            this.guna2HtmlLabel89.Size = new System.Drawing.Size(1089, 37);
-            this.guna2HtmlLabel89.TabIndex = 239;
-            this.guna2HtmlLabel89.Text = "Full Name (LN, FN, MN, SF)";
+            this.FullNameStudEnlist.AutoSize = false;
+            this.FullNameStudEnlist.BackColor = System.Drawing.Color.Transparent;
+            this.FullNameStudEnlist.Font = new System.Drawing.Font("Bahnschrift", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullNameStudEnlist.Location = new System.Drawing.Point(38, 6);
+            this.FullNameStudEnlist.Name = "FullNameStudEnlist";
+            this.FullNameStudEnlist.Size = new System.Drawing.Size(1089, 37);
+            this.FullNameStudEnlist.TabIndex = 239;
+            this.FullNameStudEnlist.Text = "Full Name (LN, FN, MN, SF)";
             // 
             // SuffixEnlist
             // 
@@ -5887,9 +5887,9 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator11;
         private Guna.UI2.WinForms.Guna2PictureBox PictureEnlist;
         private Guna.UI2.WinForms.Guna2TextBox SuffixEnlist;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel86;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel88;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel89;
+        private Guna.UI2.WinForms.Guna2HtmlLabel StudSecEnlist;
+        private Guna.UI2.WinForms.Guna2HtmlLabel StudNumEnlist;
+        private Guna.UI2.WinForms.Guna2HtmlLabel FullNameStudEnlist;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator12;
         private Guna.UI2.WinForms.Guna2TextBox YearEnlist;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
