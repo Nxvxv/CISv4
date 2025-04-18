@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.IO.Ports;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
@@ -1561,52 +1562,127 @@ namespace CISv4
 
 
         //----------------------------------------------------------------------------------ENLISTMENT--------------------------------------------------------------
-        //private void SearchCadet(string searchTerm)
-        //{
-        //    string cadetquery = "SELECT last_name, first_name, middle_name FROM cadet_info WHERE cadet_id LIKE @searchTerm";
+        private void SearchCadet(string searchTerm)
+        {
+            string cadetquery = "SELECT last_name, first_name, middle_name, suffix FROM cadet_info WHERE cadet_id LIKE @searchTerm";
 
-        //    if (string.IsNullOrWhiteSpace(searchTerm))
-        //    {
-        //        LastNameEnlist.Clear();
-        //        FirstNameEnlist.Clear();
-        //        MiddleNameEnlist.Clear();
-        //        SuffixEnlist.Clear();
-        //        return;
-        //    }
+            if (string.IsNullOrWhiteSpace(searchTerm))
+            {
+                LastNameEnlist.Clear();
+                FirstNameEnlist.Clear();
+                MiddleNameEnlist.Clear();
+                SuffixEnlist.Clear();
+                return;
+            }
 
-        //    try
-        //    {
-        //        using (MySqlConnection conn = Database.GetConnection())
-        //        {
-        //            conn.Open();
-        //            using (MySqlCommand command = new MySqlCommand(cadetquery, conn))
-        //            {
-        //                command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+                    using (MySqlCommand command = new MySqlCommand(cadetquery, conn))
+                    {
+                        command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
 
-        //                using (MySqlDataReader reader = command.ExecuteReader())
-        //                {
-        //                    if (reader.Read())
-        //                    {
-        //                        string fullName = $"{reader["last_name"]}, {reader["first_name"]} {reader["middle_name"]}";
-        //                        CadetDisplayNameEnlist.Text = fullName;
-        //                    }
-        //                    else
-        //                    {
-        //                        CadetDisplayNameEnlist.Text = "Student not found.";
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("An error occurred: " + ex.Message);
-        //    }
-            //finally
-            //{
-            //    conn.Close();
-            //}
-        //}
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string fullName = $"{reader["first_name"]} {reader["middle_name"]} {reader["last_name"]} {reader["suffix"]}";
+                                FullNameStudEnlist.Text = fullName;
+                                LastNameEnlist.Text = $"{reader["last_name"]}";
+                                FirstNameEnlist.Text = $"{reader["first_name"]}";
+                                MiddleNameEnlist.Text = $"{reader["middle_name"]}";
+                                SuffixEnlist.Text = $"{reader["suffix"]}";
+
+                            }
+                            else
+                            {
+                                FullNameStudEnlist.Text = "Student not found.";
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+        
+        }
+
+        private void StudNoEnlist_TextChanged(object sender, EventArgs e)
+        {
+            SearchCadet(StudNoEnlist.Text);
+        }
+
+        //-----------------------------------------------------------------MODIFY-------------------------------------------------------------------//
+
+        private void AddProgramInfo()
+        {
+            string program_name = ProgramName2.Text;
+            string program_code = ProgramCode.Text;
+
+            try
+            {
+                using (MySqlConnection conn = Database.GetConnection())
+                {
+                    conn.Open();
+
+                    // Check if the program code already exists
+                    string checkCode = "SELECT COUNT(*) FROM program_info WHERE program_code = @program_code";
+                    using (MySqlCommand cmd = new MySqlCommand(checkCode, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@program_code", program_code);
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        if (count > 0)
+                        {
+                            MessageBox.Show("This program code already exists.");
+                            return;
+                        }
+                    }
+
+                    // Check if the program name already exists
+                    string checkName = "SELECT COUNT(*) FROM program_info WHERE program_name = @program_name";
+                    using (MySqlCommand cmd = new MySqlCommand(checkName, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@program_name", program_name);
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        if (count > 0)
+                        {
+                            MessageBox.Show("This program name already exists.");
+                            return;
+                        }
+                    }
+
+                    // Insert the new program info
+                    string insertQuery = "INSERT INTO program_info (program_name, program_code) VALUES (@program_name, @program_code)";
+                    using (MySqlCommand cmd = new MySqlCommand(insertQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@program_name", program_name);
+                        cmd.Parameters.AddWithValue("@program_code", program_code);
+
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Program info added successfully!");
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Database error occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+
+        }
+
+        private void AddInfoBTN_Click(object sender, EventArgs e)
+        {
+            AddProgramInfo();
+        }
+
+
     }
-
 }
